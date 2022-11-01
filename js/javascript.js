@@ -17,8 +17,16 @@ $(function(){
     var bh = $(".mainArea .bettingBox");
     var wh = window.innerHeight;
 
-    gh.css("height", (String(wh - 273) + "px"));
-    bh.css("height", (String(wh - 469) + "px"));
+    if(wh < 833)
+    {
+        gh.css("height", (String(560) + "px"));
+        bh.css("height", (String(364) + "px"));
+    }
+    else
+    {
+        gh.css("height", (String(wh - 243) + "px"));
+        bh.css("height", (String(wh - 439) + "px"));
+    }
 
     var bhRe = bh.height();
     var oh = $(".mainArea .outerBox");
@@ -30,8 +38,16 @@ $(function(){
         var bh = $(".mainArea .bettingBox");
         var wh = window.innerHeight;
 
-        gh.css("height", (String(wh - 273) + "px"));
-        bh.css("height", (String(wh - 469) + "px"));
+        if(wh < 863)
+        {
+            gh.css("height", (String(590) + "px"));
+            bh.css("height", (String(394) + "px"));
+        }
+        else
+        {
+            gh.css("height", (String(wh - 243) + "px"));
+            bh.css("height", (String(wh - 439) + "px"));
+        }
 
         var bhRe = bh.height();
         var oh = $(".mainArea .outerBox");

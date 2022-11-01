@@ -55,19 +55,19 @@ footer {
         bottom: 0;
 
         li {
-            width: 174px;
-            height: 125px;
+            width: 152px;
+            height: 105px;
             @include footer_typeBtn;
             margin-right: 15px;
 
             &:hover,&:active,&.active {
-                height: 147px;
+                height: 125px;
             }
 
             i {
                 width: 63px;
                 height: 55px;
-                margin-bottom: 18px;
+                margin-bottom: 5px;
 
                 &.rule_ic {
                     background-position-x: 0;
