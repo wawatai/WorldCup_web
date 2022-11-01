@@ -42,19 +42,23 @@ $(function(){
 
 $(function(){
     var cw = $("header .center");
+    var fw = $("footer .center");
     var ww = window.innerWidth;
 
     if(ww > 1450)
     {
         cw.css("width", (String(839) + "px"));
+        fw.css("width", (String(478) + "px"));
     }
     else if(ww <= 1450 && ww > 1300)
     {
         cw.css("width", (String(ww - 610) + "px"));
+        fw.css("width", (String(ww - 972) + "px"));
     }
     else
     {
         cw.css("width", (String(691) + "px"));
+        fw.css("width", (String(330) + "px"));
     }
 
     $(window).resize(function () {
@@ -63,14 +67,17 @@ $(function(){
         if(ww > 1450)
         {
             cw.css("width", (String(839) + "px"));
+            fw.css("width", (String(478) + "px"));
         }
         else if(ww <= 1450 && ww > 1300)
         {
             cw.css("width", (String(ww - 610) + "px"));
+            fw.css("width", (String(ww - 972) + "px"));
         }
         else
         {
             cw.css("width", (String(691) + "px"));
+            fw.css("width", (String(330) + "px"));
         }
     });
 })
