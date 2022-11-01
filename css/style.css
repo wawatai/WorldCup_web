@@ -223,6 +223,7 @@ footer li i {
 html {
   width: 100%;
   height: 100%;
+  background: #000000;
 }
 html body {
   width: 100%;
@@ -311,10 +312,10 @@ html body .mainArea {
   width: 100%;
   min-width: 1300px;
   height: auto;
-  padding-top: 52px;
+  padding-top: 40px;
 }
 html body .mainArea article {
-  width: 1200px;
+  width: 1000px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,7 +326,7 @@ html body .mainArea article {
   margin: 0 auto;
 }
 html body .mainArea article .gameBox {
-  width: 580px;
+  width: 495px;
   height: 696px;
   background: rgba(8, 35, 132, 0.7450980392);
   border: solid 1px #58bff4;
@@ -404,7 +405,7 @@ html body .mainArea article .gameBox .bigTitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 57px auto 22px;
+  margin: 45px auto 13px;
 }
 html body .mainArea article .gameBox .bonusBox {
   width: 100%;
@@ -480,8 +481,8 @@ html body .mainArea article .gameBox .bonusBox .moneyBox i.nine {
   background-position-y: -297px;
 }
 html body .mainArea article .gameBox .bettingBox {
-  width: 550px;
-  height: 472px;
+  width: 480px;
+  height: 500px;
   background: rgba(0, 0, 0, 0.5019607843);
   border: solid 1px #6dd1ff;
   margin: 0 auto;
@@ -504,17 +505,17 @@ html body .mainArea article .gameBox .bettingBox .title p {
   text-align: center;
 }
 html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(1) {
-  width: 35%;
+  width: 40%;
 }
 html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(2) {
-  width: 45%;
+  width: 40%;
 }
 html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(3) {
   width: 20%;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox {
   width: 100%;
-  height: 415px;
+  height: 440px;
   padding-right: 5px;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox {
@@ -529,44 +530,55 @@ html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-sc
   background: #e8d793;
   border-radius: 10px;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table {
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul {
   width: 100%;
   height: auto;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td {
-  height: 66px;
-  vertical-align: middle;
-  text-align: center;
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td:nth-of-type(1) {
-  width: 35%;
-  text-align: left;
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div {
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td:nth-of-type(2) {
-  width: 45%;
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(1) {
+  width: 40%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td:nth-of-type(2) p {
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(2) {
+  width: 40%;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(2) p {
   font-size: 30px;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td:nth-of-type(3) {
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(3) {
   width: 20%;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td i {
-  display: inline-block;
-  width: 65px;
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div i {
+  width: 58px;
   height: 48px;
-  vertical-align: top;
   margin: 0 25px 0 14px;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td p {
-  display: inline-block;
-  height: 48px;
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div p {
   color: #ffffff;
   font-size: 25px;
   font-weight: bold;
-  line-height: 48px;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td button {
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button {
   width: 83px;
   height: 40px;
   background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#ffd644));
@@ -577,7 +589,7 @@ html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td
   font-size: 20px;
   font-weight: bold;
 }
-html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td button:hover, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td button:active, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td button.active {
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button:hover, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button:active, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#e25406));
   background: linear-gradient(to top, #ea8b11 0%, #e25406 100%);
   color: #ffffff;
