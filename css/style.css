@@ -135,6 +135,31 @@ footer .center::after {
   background-size: contain;
 }
 
+header .bgBtn_1 {
+  background: url("../images/bg_01_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_2 {
+  background: url("../images/bg_02_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_3 {
+  background: url("../images/bg_03_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_4 {
+  background: url("../images/bg_04_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
+header .bgBtn_5 {
+  background: url("../images/bg_05_Btn.png") no-repeat center;
+  background-size: contain;
+}
+
 footer li i {
   background: url("../images/footer_typeIC.png") no-repeat;
   background-size: 200%;
@@ -210,6 +235,7 @@ html body header {
   background: -webkit-gradient(linear, left top, right top, from(#d7a950), color-stop(6%, #bf8935), color-stop(49%, #f3e19a), color-stop(93%, #bf8935), to(#d7a950));
   background: linear-gradient(to right, #d7a950 0%, #bf8935 6%, #f3e19a 49%, #bf8935 93%, #d7a950 100%);
   border-bottom: solid 1px #f4e1a3;
+  position: relative;
 }
 html body header .center {
   width: 839px;
@@ -251,6 +277,35 @@ html body header .center p span {
 }
 html body header .center p span.amount {
   color: #32ffe9;
+}
+html body header ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 24px;
+}
+html body header ul li {
+  width: 35px;
+  height: 35px;
+  border: solid 1px #734428;
+  border-radius: 50%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+  margin: 0 8px;
+}
+html body header ul li:hover, html body header ul li:active, html body header ul li.active {
+  border-color: #ffeba8;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 html body .mainArea {
   width: 100%;

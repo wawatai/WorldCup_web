@@ -3,6 +3,9 @@ $header_BG: linear-gradient(to right,#d7a950 0%,#bf8935 6%,#f3e19a 49%,#bf8935 9
 $header_Border: #f4e1a3;
 $header_Color: #ffffff;
 $header_RemindColor: #32ffe9;
+$header_bgType_Border: #734428;
+$header_bgType_ActiveBorder: #ffeba8;
+$header_bgType_ActiveShadow: #00000080;
 @mixin footer_transBtn {
     background: linear-gradient(to top,#fb334b 0%,#c30b2a 50%,#fb334b 100%);
     border-radius: 10px;
