@@ -1,0 +1,80 @@
+.bg.style_1 {
+    background: url('../images/bg_01.jpg') no-repeat top center;
+}
+.bg.style_2 {
+    background: url('../images/bg_02.jpg') no-repeat top center;
+}
+.bg.style_3 {
+    background: url('../images/bg_03.jpg') no-repeat top center;
+}
+.bg.style_4 {
+    background: url('../images/bg_04.jpg') no-repeat top center;
+}
+.bg.style_5 {
+    background: url('../images/bg_05.jpg') no-repeat top center;
+}
+
+header .center,
+footer .center {
+    background: url('../images/smallBG_02.png');
+    background-size: contain;
+}
+header .center::before,
+footer .center::before {
+    background: url('../images/smallBG_01.png') no-repeat center;
+    background-size: contain;
+}
+header .center::after,
+footer .center::after {
+    background: url('../images/smallBG_03.png') no-repeat center;
+    background-size: contain;
+}
+footer li i {
+    background: url('../images/footer_typeIC.png') no-repeat;
+    background-size: 200%;
+}
+
+.mainArea .dateBox i {
+    background: url('../images/number.png') no-repeat;
+    background-size: 100%;
+}
+.mainArea .bonusBox .moneyBox {
+    background: url('../images/bonus_BG.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .moneyBox i {
+    background: url('../images/bonus_number.png') no-repeat;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Brazil {
+    background: url('../images/flag/Brazil.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Germany {
+    background: url('../images/flag/Germany.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .the_Netherlands {
+    background: url('../images/flag/Netherlands.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Franch {
+    background: url('../images/flag/Franch.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .England {
+    background: url('../images/flag/England.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Argentina {
+    background: url('../images/flag/Argentina.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .italy {
+    background: url('../images/flag/italy.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Sweden {
+    background: url('../images/flag/Sweden.png') no-repeat center;
+    background-size: 100%;
+}

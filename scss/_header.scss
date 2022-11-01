@@ -1,0 +1,48 @@
+header {
+    width: 100%;
+    min-width: 1300px;
+    height: 70px;
+    background: $header_BG;
+    border-bottom: solid 1px $header_Border;
+
+    .center {
+        width: 839px;
+        height: 59px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin: 0 auto;
+        padding: 0 80px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 18px;
+            height: 100%;
+        }
+        &::before {
+            left: -18px;
+        }
+        &::after {
+            right: -18px;
+        }
+
+        p {
+            color: $header_Color;
+            font-size: 23px;
+            font-weight: bold;
+
+            span {
+                letter-spacing: 1px;
+                padding-left: 5px;
+
+                &.amount {
+                    color: $header_RemindColor;
+                }
+            }
+        }
+    }
+}

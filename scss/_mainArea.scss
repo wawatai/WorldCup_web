@@ -1,0 +1,243 @@
+.mainArea {
+    width: 100%;
+    min-width: 1300px;
+    height: auto;
+    padding-top: 52px;
+
+    article {
+        width: 1200px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .gameBox {
+            width: 580px;
+            height: 696px;
+            background: $mainArea_BG;
+            border: solid 1px $mainArea_Border;
+            position: relative;
+
+            .dateBox {
+                width: auto;
+                height: auto;
+                display: flex;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -18px;
+
+                i {
+                    width: 48px;
+                    height: 51px;
+
+                    &.month_word {
+                        background-position-y: 0;
+                    }
+                    &.day_word {
+                        background-position-y: -51px;
+                    }
+                    &.zero {
+                        background-position-y: -102px;
+                    }
+                    &.one {
+                        background-position-y: -153px;
+                    }
+                    &.two {
+                        background-position-y: -204px;
+                    }
+                    &.three {
+                        background-position-y: -255px;
+                    }
+                    &.four {
+                        background-position-y: -306px;
+                    }
+                    &.five {
+                        background-position-y: -357px;
+                    }
+                    &.six {
+                        background-position-y: -408px;
+                    }
+                    &.seven {
+                        background-position-y: -459px;
+                    }
+                    &.eight {
+                        background-position-y: -510px;
+                    }
+                    &.nine {
+                        background-position-y: -561px;
+                    }
+                }
+            }
+
+            .bigTitle {
+                width: 450px;
+                height: 52px;
+                @include mainArea_bigTitle;
+                margin: 57px auto 22px;
+            }
+
+            .bonusBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 12px;
+
+                .title {
+                    color: transparent;
+                    font-size: 30px;
+                    font-weight: bold;
+                    background: $mainArea_BonusColor_1;
+                    background-clip: text;
+                    margin-top: -5px;
+                }
+
+                .moneyBox {
+                    width: 269px;
+                    height: 63px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 15px;
+
+                    i {
+                        width: 25px;
+                        height: 33px;
+                        margin: -6px 2px 0;
+
+                        &.zero {
+                            background-position-y: 0;
+                        }
+                        &.one {
+                            background-position-y: -33px;
+                        }
+                        &.two {
+                            background-position-y: -66px;
+                        }
+                        &.three {
+                            background-position-y: -99px;
+                        }
+                        &.four {
+                            background-position-y: -132px;
+                        }
+                        &.five {
+                            background-position-y: -165px;
+                        }
+                        &.six {
+                            background-position-y: -198px;
+                        }
+                        &.seven {
+                            background-position-y: -231px;
+                        }
+                        &.eight {
+                            background-position-y: -264px;
+                        }
+                        &.nine {
+                            background-position-y: -297px;
+                        }
+                    }
+                }
+            }
+
+            .bettingBox {
+                width: 550px;
+                height: 472px;
+                background: $mainArea_innerBG;
+                border: solid 1px $mainArea_innerBorder;
+                margin: 0 auto;
+
+                .title {
+                    width: 100%;
+                    height: 52px;
+                    background: $mainArea_innerTitleBG;
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        color: $mainArea_innerTitle;
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+
+                        &:nth-of-type(1) {
+                            width: 35%;
+                        }
+                        &:nth-of-type(2) {
+                            width: 45%;
+                        }
+                        &:nth-of-type(3) {
+                            width: 20%;
+                        }
+                    }
+                }
+
+                .outerBox {
+                    width: 100%;
+                    height: 415px;
+                    padding-right: 5px;
+
+                    .tableBox {
+                        width: 100%;
+                        height: 100%;
+                        overflow-y: auto;
+                        @include scrollBar;
+    
+                        table {
+                            width: 100%;
+                            height: auto;
+    
+                            tr {
+    
+                                td {
+                                    height: 66px;
+                                    vertical-align: middle;
+                                    text-align: center;
+    
+                                    &:nth-of-type(1) {
+                                        width: 35%;
+                                        text-align: left;
+                                    }
+                                    &:nth-of-type(2) {
+                                        width: 45%;
+
+                                        p {
+                                            font-size: 30px;
+                                        }
+                                    }
+                                    &:nth-of-type(3) {
+                                        width: 20%;
+                                    }
+    
+                                    i {
+                                        display: inline-block;
+                                        width: 65px;
+                                        height: 48px;
+                                        vertical-align: top;
+                                        margin: 0 25px 0 14px;
+                                    }
+    
+                                    p {
+                                        display: inline-block;
+                                        height: 48px;
+                                        color: $mainArea_Color;
+                                        font-size: 25px;
+                                        font-weight: bold;
+                                        line-height: 48px;
+                                    }
+    
+                                    button {
+                                        width: 83px;
+                                        height: 40px;
+                                        @include mainArea_betBtn;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

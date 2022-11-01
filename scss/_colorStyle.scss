@@ -1,0 +1,89 @@
+//header+footer
+$header_BG: linear-gradient(to right,#d7a950 0%,#bf8935 6%,#f3e19a 49%,#bf8935 93%,#d7a950 100%);
+$header_Border: #f4e1a3;
+$header_Color: #ffffff;
+$header_RemindColor: #32ffe9;
+@mixin footer_transBtn {
+    background: linear-gradient(to top,#fb334b 0%,#c30b2a 50%,#fb334b 100%);
+    border-radius: 10px;
+    border: solid 1px #f4e1a3;
+    box-shadow: 0 3px 8px 0 #00000080;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#fb334b 0%,#c30b2a 92%);
+    }
+}
+@mixin footer_typeBtn {
+    background: linear-gradient(to top,#1b3180 0%,#1d46a4 100%);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -3px 8px 0 #00000080;
+    border: solid 3px #fff1ae;
+    border-bottom: none;
+    color: #fff1ae;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#112a83 0%,#0e236d 100%);
+    }
+}
+
+//mainArea
+$mainArea_BG: #082384be;
+$mainArea_innerBG: #00000080;
+$mainArea_innerTitleBG: #1b327b;
+$mainArea_innerTitle: #e2f4ff;
+$mainArea_Border: #58bff4;
+$mainArea_innerBorder: #6dd1ff;
+$mainArea_Color: #ffffff;
+$mainArea_BonusColor_1: linear-gradient(to top,#f5c83d 10%,#e8862e 35%,#ffd75f 67%);
+$mainArea_BonusColor_2: linear-gradient(to top,#efe7e7 16%,#c1b6b6 45%,#efe7e7 70%);
+@mixin mainArea_bigTitle {
+    background: linear-gradient(to top,#e8d793 0%,#d2a359 50%,#e8d793 93%);
+    border-radius: 10px;
+    border: solid 1px #f9eecb;
+    box-shadow: 0 3px 6px -2px #00000080;
+    color: #241601;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin mainArea_betBtn {
+    background: linear-gradient(to top,#ea8b11 0%,#ffd644 100%);
+    border-radius: 5px;
+    border: none;
+    color: #161616;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#ea8b11 0%,#e25406 100%);
+        color: #ffffff;
+    }
+}
+
+
+//套件
+
+
+@mixin scrollBar {
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #e8d793;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,674 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+i {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.bg.style_1 {
+  background: url("../images/bg_01.jpg") no-repeat top center;
+}
+
+.bg.style_2 {
+  background: url("../images/bg_02.jpg") no-repeat top center;
+}
+
+.bg.style_3 {
+  background: url("../images/bg_03.jpg") no-repeat top center;
+}
+
+.bg.style_4 {
+  background: url("../images/bg_04.jpg") no-repeat top center;
+}
+
+.bg.style_5 {
+  background: url("../images/bg_05.jpg") no-repeat top center;
+}
+
+header .center,
+footer .center {
+  background: url("../images/smallBG_02.png");
+  background-size: contain;
+}
+
+header .center::before,
+footer .center::before {
+  background: url("../images/smallBG_01.png") no-repeat center;
+  background-size: contain;
+}
+
+header .center::after,
+footer .center::after {
+  background: url("../images/smallBG_03.png") no-repeat center;
+  background-size: contain;
+}
+
+footer li i {
+  background: url("../images/footer_typeIC.png") no-repeat;
+  background-size: 200%;
+}
+
+.mainArea .dateBox i {
+  background: url("../images/number.png") no-repeat;
+  background-size: 100%;
+}
+
+.mainArea .bonusBox .moneyBox {
+  background: url("../images/bonus_BG.png") no-repeat center;
+  background-size: contain;
+}
+
+.mainArea .moneyBox i {
+  background: url("../images/bonus_number.png") no-repeat;
+  background-size: 100%;
+}
+
+.mainArea .bettingBox .Brazil {
+  background: url("../images/flag/Brazil.png") no-repeat center;
+  background-size: 100%;
+}
+
+.mainArea .bettingBox .Germany {
+  background: url("../images/flag/Germany.png") no-repeat center;
+  background-size: 100%;
+}
+
+.mainArea .bettingBox .the_Netherlands {
+  background: url("../images/flag/Netherlands.png") no-repeat center;
+  background-size: 100%;
+}
+
+.mainArea .bettingBox .Franch {
+  background: url("../images/flag/Franch.png") no-repeat center;
+  background-size: 100%;
+}
+
+.mainArea .bettingBox .England {
+  background: url("../images/flag/England.png") no-repeat center;
+  background-size: 100%;
+}
+
+.mainArea .bettingBox .Argentina {
+  background: url("../images/flag/Argentina.png") no-repeat center;
+  background-size: 100%;
+}
+
+.mainArea .bettingBox .italy {
+  background: url("../images/flag/italy.png") no-repeat center;
+  background-size: 100%;
+}
+
+.mainArea .bettingBox .Sweden {
+  background: url("../images/flag/Sweden.png") no-repeat center;
+  background-size: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body header {
+  width: 100%;
+  min-width: 1300px;
+  height: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7a950), color-stop(6%, #bf8935), color-stop(49%, #f3e19a), color-stop(93%, #bf8935), to(#d7a950));
+  background: linear-gradient(to right, #d7a950 0%, #bf8935 6%, #f3e19a 49%, #bf8935 93%, #d7a950 100%);
+  border-bottom: solid 1px #f4e1a3;
+}
+html body header .center {
+  width: 839px;
+  height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+html body header .center::before, html body header .center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 100%;
+}
+html body header .center::before {
+  left: -18px;
+}
+html body header .center::after {
+  right: -18px;
+}
+html body header .center p {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: bold;
+}
+html body header .center p span {
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+html body header .center p span.amount {
+  color: #32ffe9;
+}
+html body .mainArea {
+  width: 100%;
+  min-width: 1300px;
+  height: auto;
+  padding-top: 52px;
+}
+html body .mainArea article {
+  width: 1200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+html body .mainArea article .gameBox {
+  width: 580px;
+  height: 696px;
+  background: rgba(8, 35, 132, 0.7450980392);
+  border: solid 1px #58bff4;
+  position: relative;
+}
+html body .mainArea article .gameBox .dateBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -18px;
+}
+html body .mainArea article .gameBox .dateBox i {
+  width: 48px;
+  height: 51px;
+}
+html body .mainArea article .gameBox .dateBox i.month_word {
+  background-position-y: 0;
+}
+html body .mainArea article .gameBox .dateBox i.day_word {
+  background-position-y: -51px;
+}
+html body .mainArea article .gameBox .dateBox i.zero {
+  background-position-y: -102px;
+}
+html body .mainArea article .gameBox .dateBox i.one {
+  background-position-y: -153px;
+}
+html body .mainArea article .gameBox .dateBox i.two {
+  background-position-y: -204px;
+}
+html body .mainArea article .gameBox .dateBox i.three {
+  background-position-y: -255px;
+}
+html body .mainArea article .gameBox .dateBox i.four {
+  background-position-y: -306px;
+}
+html body .mainArea article .gameBox .dateBox i.five {
+  background-position-y: -357px;
+}
+html body .mainArea article .gameBox .dateBox i.six {
+  background-position-y: -408px;
+}
+html body .mainArea article .gameBox .dateBox i.seven {
+  background-position-y: -459px;
+}
+html body .mainArea article .gameBox .dateBox i.eight {
+  background-position-y: -510px;
+}
+html body .mainArea article .gameBox .dateBox i.nine {
+  background-position-y: -561px;
+}
+html body .mainArea article .gameBox .bigTitle {
+  width: 450px;
+  height: 52px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e8d793), color-stop(50%, #d2a359), color-stop(93%, #e8d793));
+  background: linear-gradient(to top, #e8d793 0%, #d2a359 50%, #e8d793 93%);
+  border-radius: 10px;
+  border: solid 1px #f9eecb;
+  -webkit-box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.5019607843);
+  color: #241601;
+  font-size: 25px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 57px auto 22px;
+}
+html body .mainArea article .gameBox .bonusBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 12px;
+}
+html body .mainArea article .gameBox .bonusBox .title {
+  color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #f5c83d), color-stop(35%, #e8862e), color-stop(67%, #ffd75f));
+  background: linear-gradient(to top, #f5c83d 10%, #e8862e 35%, #ffd75f 67%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin-top: -5px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox {
+  width: 269px;
+  height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i {
+  width: 25px;
+  height: 33px;
+  margin: -6px 2px 0;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.zero {
+  background-position-y: 0;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.one {
+  background-position-y: -33px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.two {
+  background-position-y: -66px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.three {
+  background-position-y: -99px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.four {
+  background-position-y: -132px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.five {
+  background-position-y: -165px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.six {
+  background-position-y: -198px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.seven {
+  background-position-y: -231px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.eight {
+  background-position-y: -264px;
+}
+html body .mainArea article .gameBox .bonusBox .moneyBox i.nine {
+  background-position-y: -297px;
+}
+html body .mainArea article .gameBox .bettingBox {
+  width: 550px;
+  height: 472px;
+  background: rgba(0, 0, 0, 0.5019607843);
+  border: solid 1px #6dd1ff;
+  margin: 0 auto;
+}
+html body .mainArea article .gameBox .bettingBox .title {
+  width: 100%;
+  height: 52px;
+  background: #1b327b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .mainArea article .gameBox .bettingBox .title p {
+  color: #e2f4ff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(1) {
+  width: 35%;
+}
+html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(2) {
+  width: 45%;
+}
+html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(3) {
+  width: 20%;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox {
+  width: 100%;
+  height: 415px;
+  padding-right: 5px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-scrollbar {
+  width: 5px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-scrollbar-thumb {
+  background: #e8d793;
+  border-radius: 10px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table {
+  width: 100%;
+  height: auto;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td {
+  height: 66px;
+  vertical-align: middle;
+  text-align: center;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td:nth-of-type(1) {
+  width: 35%;
+  text-align: left;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td:nth-of-type(2) {
+  width: 45%;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td:nth-of-type(2) p {
+  font-size: 30px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td:nth-of-type(3) {
+  width: 20%;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td i {
+  display: inline-block;
+  width: 65px;
+  height: 48px;
+  vertical-align: top;
+  margin: 0 25px 0 14px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td p {
+  display: inline-block;
+  height: 48px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 48px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td button {
+  width: 83px;
+  height: 40px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#ffd644));
+  background: linear-gradient(to top, #ea8b11 0%, #ffd644 100%);
+  border-radius: 5px;
+  border: none;
+  color: #161616;
+  font-size: 20px;
+  font-weight: bold;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td button:hover, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td button:active, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox table tr td button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#e25406));
+  background: linear-gradient(to top, #ea8b11 0%, #e25406 100%);
+  color: #ffffff;
+}
+html body footer {
+  width: 100%;
+  min-width: 1300px;
+  height: 90px;
+  background: -webkit-gradient(linear, left top, right top, from(#d7a950), color-stop(6%, #bf8935), color-stop(49%, #f3e19a), color-stop(93%, #bf8935), to(#d7a950));
+  background: linear-gradient(to right, #d7a950 0%, #bf8935 6%, #f3e19a 49%, #bf8935 93%, #d7a950 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+html body footer .center {
+  width: 478px;
+  height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body footer .center::before, html body footer .center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 100%;
+}
+html body footer .center::before {
+  left: -18px;
+}
+html body footer .center::after {
+  right: -18px;
+}
+html body footer .center p {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+html body footer .center p span {
+  color: #32ffe9;
+  letter-spacing: 1px;
+}
+html body footer ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+}
+html body footer ul li {
+  width: 174px;
+  height: 125px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1b3180), to(#1d46a4));
+  background: linear-gradient(to top, #1b3180 0%, #1d46a4 100%);
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.5019607843);
+  border: solid 3px #fff1ae;
+  border-bottom: none;
+  color: #fff1ae;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+  margin-right: 15px;
+}
+html body footer ul li:hover, html body footer ul li:active, html body footer ul li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#112a83), to(#0e236d));
+  background: linear-gradient(to top, #112a83 0%, #0e236d 100%);
+}
+html body footer ul li:hover, html body footer ul li:active, html body footer ul li.active {
+  height: 147px;
+}
+html body footer ul li i {
+  width: 63px;
+  height: 55px;
+  margin-bottom: 18px;
+}
+html body footer ul li i.rule_ic {
+  background-position-x: 0;
+}
+html body footer ul li i.record_ic {
+  background-position-x: 100%;
+}
+html body footer .transBtn {
+  width: 241px;
+  height: 67px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fb334b), color-stop(50%, #c30b2a), to(#fb334b));
+  background: linear-gradient(to top, #fb334b 0%, #c30b2a 50%, #fb334b 100%);
+  border-radius: 10px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5019607843);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5019607843);
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 24px;
+}
+html body footer .transBtn:hover, html body footer .transBtn:active, html body footer .transBtn.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fb334b), color-stop(92%, #c30b2a));
+  background: linear-gradient(to top, #fb334b 0%, #c30b2a 92%);
+}
+html body .bg {
+  width: 100%;
+  min-width: 1300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
