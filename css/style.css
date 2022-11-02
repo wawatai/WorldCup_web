@@ -162,7 +162,7 @@ header .bgBtn_5 {
 
 footer li i {
   background: url("../images/footer_typeIC.png") no-repeat;
-  background-size: 200%;
+  background-size: 300%;
 }
 
 .mainArea .dateBox i {
@@ -220,6 +220,16 @@ footer li i {
   background-size: 100%;
 }
 
+.jumpWindow .close::before {
+  background: url("../images/jumpWindow_close.png") no-repeat center;
+  background-size: contain;
+}
+
+.pageBox i {
+  background: url("../images/pageBox_arrow.png") no-repeat center;
+  background-size: contain;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -240,7 +250,7 @@ html body header {
   position: relative;
 }
 html body header .center {
-  width: 839px;
+  width: 439px;
   height: 59px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,12 +258,11 @@ html body header .center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   margin: 0 auto;
-  padding: 0 80px;
 }
 html body header .center::before, html body header .center::after {
   content: "";
@@ -499,20 +508,71 @@ html body .mainArea article .gameBox .bettingBox .title {
       -ms-flex-align: center;
           align-items: center;
 }
-html body .mainArea article .gameBox .bettingBox .title p {
+html body .mainArea article .gameBox .bettingBox .title li {
   color: #e2f4ff;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
-html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(1) {
+html body .mainArea article .gameBox .bettingBox .title li:nth-of-type(1) {
   width: 40%;
 }
-html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(2) {
-  width: 40%;
+html body .mainArea article .gameBox .bettingBox .title li:nth-of-type(2) {
+  width: 30%;
 }
-html body .mainArea article .gameBox .bettingBox .title p:nth-of-type(3) {
-  width: 20%;
+html body .mainArea article .gameBox .bettingBox .title li:nth-of-type(3) {
+  width: 30%;
+}
+html body .mainArea article .gameBox .bettingBox .title li .rowBox {
+  width: 130px;
+  height: 38px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d4d4d4));
+  background: linear-gradient(to top, #ffffff 0%, #d4d4d4 100%);
+  border-radius: 30px;
+  border: solid 1px #474747;
+  -webkit-box-sizing: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+          box-sizing: 0 2px 5px 0 rgba(0, 0, 0, 0.5019607843);
+  color: #4c4c4c;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3px;
+  cursor: pointer;
+}
+html body .mainArea article .gameBox .bettingBox .title li .rowBox.left p:nth-of-type(1) {
+  background: -webkit-gradient(linear, left bottom, left top, from(#06b6e8), color-stop(17%, #1972e0), to(#06b6e8));
+  background: linear-gradient(to top, #06b6e8 0%, #1972e0 17%, #06b6e8 100%);
+  border-radius: 30px;
+  border: solid 1px #44ccee;
+  color: #ffffff;
+}
+html body .mainArea article .gameBox .bettingBox .title li .rowBox.right p:nth-of-type(2) {
+  background: -webkit-gradient(linear, left bottom, left top, from(#11d416), color-stop(17%, #0c8b1b), to(#11d416));
+  background: linear-gradient(to top, #11d416 0%, #0c8b1b 17%, #11d416 100%);
+  border-radius: 30px;
+  border: solid 1px #1deb27;
+  color: #ffffff;
+}
+html body .mainArea article .gameBox .bettingBox .title li .rowBox p {
+  width: 50%;
+  height: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox {
   width: 100%;
@@ -522,7 +582,7 @@ html body .mainArea article .gameBox .bettingBox .outerBox {
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox {
   width: 100%;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: overlay;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-scrollbar {
   width: 5px;
@@ -561,13 +621,16 @@ html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:n
           justify-content: flex-start;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(2) {
-  width: 40%;
+  width: 30%;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(2) p {
   font-size: 30px;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div:nth-of-type(3) {
-  width: 20%;
+  width: 30%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div i {
   width: 58px;
@@ -589,6 +652,7 @@ html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div b
   color: #161616;
   font-size: 20px;
   font-weight: bold;
+  margin-right: 10px;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button:hover, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button:active, html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div button.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#ea8b11), to(#e25406));
@@ -613,42 +677,6 @@ html body footer {
   position: fixed;
   left: 0;
   bottom: 0;
-}
-html body footer .center {
-  width: 478px;
-  height: 59px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-}
-html body footer .center::before, html body footer .center::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 18px;
-  height: 100%;
-}
-html body footer .center::before {
-  left: -18px;
-}
-html body footer .center::after {
-  right: -18px;
-}
-html body footer .center p {
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: bold;
-}
-html body footer .center p span {
-  color: #32ffe9;
-  letter-spacing: 1px;
 }
 html body footer ul {
   width: auto;
@@ -702,34 +730,570 @@ html body footer ul li:hover, html body footer ul li:active, html body footer ul
   height: 125px;
 }
 html body footer ul li i {
-  width: 63px;
-  height: 55px;
-  margin-bottom: 5px;
+  width: 50px;
+  height: 45px;
+  margin-bottom: 10px;
 }
 html body footer ul li i.rule_ic {
   background-position-x: 0;
 }
 html body footer ul li i.record_ic {
+  background-position-x: 50%;
+}
+html body footer ul li i.acting_ic {
   background-position-x: 100%;
 }
-html body footer .transBtn {
-  width: 241px;
-  height: 67px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fb334b), color-stop(50%, #c30b2a), to(#fb334b));
-  background: linear-gradient(to top, #fb334b 0%, #c30b2a 50%, #fb334b 100%);
-  border-radius: 10px;
-  border: solid 1px #f4e1a3;
-  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5019607843);
-          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5019607843);
-  color: #ffffff;
+html body .filter {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+html body .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #bf8935), color-stop(49%, #eab95a), color-stop(87%, #eab95a), to(#f9d87f));
+  background: linear-gradient(to top, #bf8935 5%, #eab95a 49%, #eab95a 87%, #f9d87f 100%);
+  border-radius: 12px;
+  border: solid 1px #fff8c1;
+  overflow: hidden;
+  display: none;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow .title {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .filter .jumpWindow .title p {
+  color: #161616;
   font-size: 25px;
   font-weight: bold;
-  position: absolute;
-  right: 24px;
 }
-html body footer .transBtn:hover, html body footer .transBtn:active, html body footer .transBtn.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fb334b), color-stop(92%, #c30b2a));
-  background: linear-gradient(to top, #fb334b 0%, #c30b2a 92%);
+html body .filter .jumpWindow .title i {
+  width: 50px;
+  height: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c31f17), color-stop(47%, #971c1c), to(#c31f17));
+  background: linear-gradient(to top, #c31f17 0%, #971c1c 47%, #c31f17 100%);
+  border: solid 1px #fff8c1;
+  border-width: 0 0 1px 1px;
+  border-radius: 0 12px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+html body .filter .jumpWindow .title i::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 21px;
+  height: 21px;
+}
+html body .filter .jumpWindow.record {
+  width: 800px;
+  height: 530px;
+}
+html body .filter .jumpWindow.record .content {
+  width: 100%;
+  height: auto;
+  padding: 32px 32px 0;
+}
+html body .filter .jumpWindow.record .content .topList {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 3px #112f90;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.record .content .topList li {
+  width: 80px;
+  height: 37px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f7e9d6), to(#ffffff));
+  background: linear-gradient(to top, #f7e9d6 0%, #ffffff 100%);
+  border-radius: 5px 5px 0 0;
+  border: solid 1px #ffffff;
+  border-bottom: none;
+  color: #161616;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 8px;
+}
+html body .filter .jumpWindow.record .content .topList li:hover, html body .filter .jumpWindow.record .content .topList li:active, html body .filter .jumpWindow.record .content .topList li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#102e90), to(#1d46a4));
+  background: linear-gradient(to top, #102e90 0%, #1d46a4 100%);
+  border-color: #123192;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.record .content .recordBox {
+  width: 100%;
+  height: auto;
+  border: solid 1px #fff8c1;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle {
+  width: 100%;
+  height: 40px;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 5px;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li {
+  border-right: solid 1px #fff8c1;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:nth-of-type(1) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:nth-of-type(2) {
+  width: 25%;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:nth-of-type(3) {
+  width: 15%;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:nth-of-type(4) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .smallTitle ul li:last-child {
+  width: 20%;
+  border: none;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox {
+  width: 100%;
+  height: 240px;
+  background: #ffffff;
+  padding-right: 5px;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox {
+  width: 100%;
+  height: 100%;
+  overflow-y: overlay;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox::-webkit-scrollbar {
+  width: 5px;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox::-webkit-scrollbar-thumb {
+  background: #a06d15;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li {
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px #b39c77;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li:last-child {
+  border: none;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p {
+  border-right: solid 1px #fff8c1;
+  color: #252525;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:nth-of-type(1) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:nth-of-type(2) {
+  width: 25%;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:nth-of-type(3) {
+  width: 15%;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:nth-of-type(4) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox ul li p:last-child {
+  width: 20%;
+  border: none;
+}
+html body .filter .jumpWindow.record .content .recordBox .total {
+  width: 100%;
+  height: 40px;
+  background: #1d3c83;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 5px;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:nth-of-type(1) {
+  width: 20%;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:last-child {
+  width: 80%;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.record .content .recordBox .total li p {
+  width: 100%;
+  border-right: solid 1px #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.record .content .pageBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 10px;
+}
+html body .filter .jumpWindow.record .content .pageBox i {
+  width: 7px;
+  height: 9px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.record .content .pageBox i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .filter .jumpWindow.record .content .pageBox ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+html body .filter .jumpWindow.record .content .pageBox ul li {
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.record .content .pageBox ul li:hover, html body .filter .jumpWindow.record .content .pageBox ul li:active, html body .filter .jumpWindow.record .content .pageBox ul li.active {
+  background: #1d46a4;
+  border-color: #1d46a4;
+}
+html body .filter .jumpWindow.record .content .pageBox ul li:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.rule {
+  width: 650px;
+  height: 540px;
+}
+html body .filter .jumpWindow.rule .content {
+  width: 100%;
+  height: auto;
+  padding: 32px 32px 0;
+}
+html body .filter .jumpWindow.rule .content .textBox {
+  width: 100%;
+  height: 350px;
+  background: #ffffff;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox {
+  width: 100%;
+  height: 100%;
+  padding-right: 5px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox {
+  width: 100%;
+  height: 100%;
+  overflow-y: overlay;
+  padding: 16px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox::-webkit-scrollbar {
+  width: 5px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox::-webkit-scrollbar-thumb {
+  background: #a06d15;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox p {
+  color: #252525;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+}
+html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox p.mar {
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.rule .content .check {
+  width: 242px;
+  height: 47px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(50%, #0826a8), to(#1251df));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 50%, #1251df 100%);
+  border-radius: 5px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto 0;
+}
+html body .filter .jumpWindow.rule .content .check:hover, html body .filter .jumpWindow.rule .content .check:active, html body .filter .jumpWindow.rule .content .check.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
+}
+html body .filter .jumpWindow.betting {
+  width: 412px;
+  height: 504px;
+}
+html body .filter .jumpWindow.betting .content {
+  width: 100%;
+  height: auto;
+  padding: 16px 24px 0;
+}
+html body .filter .jumpWindow.betting .content .bettingBox {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: solid 1px #917548;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .smallTitle {
+  width: 100%;
+  height: 40px;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul li {
+  width: 50%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul li.single {
+  width: 100%;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .pointBox {
+  width: 100%;
+  height: 40px;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .pointBox ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .pointBox ul li {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .pointBox ul li:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .pointBox ul li p {
+  width: 100%;
+  border-right: solid 1px #917548;
+  color: #252525;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .inputBox {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 10px 0 15px;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .inputBox input {
+  width: 210px;
+  height: 35px;
+  background: #ebebeb;
+  border-radius: 5px;
+  border: solid 1px #6b6b6b;
+  color: #eb0d0d;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 0 10px 10px;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button {
+  width: auto;
+  height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dec8a6), color-stop(68%, #fffcf8));
+  background: linear-gradient(to top, #dec8a6 0%, #fffcf8 68%);
+  border-radius: 5px;
+  border: solid 1px #a06d15;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:hover, html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:active, html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button.active {
+  background: #970e08;
+  border-color: #970e08;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:last-child {
+  -ms-grid-column: -1;
+      grid-column-start: -1;
+  grid-column-end: 3;
+}
+html body .filter .jumpWindow.betting .content .lastBox {
+  width: 100%;
+  height: auto;
+  margin-top: 26px;
+}
+html body .filter .jumpWindow.betting .content .lastBox button {
+  width: 242px;
+  height: 47px;
+  display: block;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.betting .content .lastBox button:first-child {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(50%, #0826a8), to(#1251df));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 50%, #1251df 100%);
+  border-radius: 5px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+html body .filter .jumpWindow.betting .content .lastBox button:first-child:hover, html body .filter .jumpWindow.betting .content .lastBox button:first-child:active, html body .filter .jumpWindow.betting .content .lastBox button:first-child.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
+}
+html body .filter .jumpWindow.betting .content .lastBox button:last-child {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #07a107), color-stop(49%, #0a5f08), color-stop(90%, #07a107));
+  background: linear-gradient(to top, #07a107 3%, #0a5f08 49%, #07a107 90%);
+  border-radius: 5px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.betting .content .lastBox button:last-child:hover, html body .filter .jumpWindow.betting .content .lastBox button:last-child:active, html body .filter .jumpWindow.betting .content .lastBox button:last-child.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #07a107), color-stop(69%, #0a5f08));
+  background: linear-gradient(to top, #07a107 3%, #0a5f08 69%);
 }
 html body .bg {
   width: 100%;

@@ -10,40 +10,44 @@ footer {
     left: 0;
     bottom: 0;
 
-    .center {
-        width: 478px;
-        height: 59px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+    // .center {
+    //     width: 478px;
+    //     height: 59px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     position: relative;
 
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            width: 18px;
-            height: 100%;
-        }
-        &::before {
-            left: -18px;
-        }
-        &::after {
-            right: -18px;
-        }
+    //     &::before,
+    //     &::after {
+    //         content: "";
+    //         position: absolute;
+    //         top: 0;
+    //         width: 18px;
+    //         height: 100%;
+    //     }
+    //     &::before {
+    //         left: -18px;
+    //     }
+    //     &::after {
+    //         right: -18px;
+    //     }
 
-        p {
-            color: $header_Color;
-            font-size: 25px;
-            font-weight: bold;
+    //     p {
+    //         color: $header_Color;
+    //         font-size: 25px;
+    //         font-weight: bold;
 
-            span {
-                color: $header_RemindColor;
-                letter-spacing: 1px;
-            }
-        }
-    }
+    //         span {
+    //             color: $header_RemindColor;
+    //             letter-spacing: 1px;
+    //         }
+    //     }
+
+    //     @media screen and (max-width: 1410px) {
+    //         margin-left: 110px;
+    //     }
+    // }
 
     ul {
         width: auto;
@@ -65,25 +69,20 @@ footer {
             }
 
             i {
-                width: 63px;
-                height: 55px;
-                margin-bottom: 5px;
+                width: 50px;
+                height: 45px;
+                margin-bottom: 10px;
 
                 &.rule_ic {
                     background-position-x: 0;
                 }
                 &.record_ic {
+                    background-position-x: 50%;
+                }
+                &.acting_ic {
                     background-position-x: 100%;
                 }
             }
         }
-    }
-
-    .transBtn {
-        width: 241px;
-        height: 67px;
-        @include footer_transBtn;
-        position: absolute;
-        right: 24px;
     }
 }

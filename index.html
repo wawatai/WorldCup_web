@@ -23,10 +23,10 @@
                 會員帳號:
                 <span>000000</span>
             </p>
-            <p class="point">
+            <!-- <p class="point">
                 我的競投積分:
                 <span class="amount">00000000</span>
-            </p>
+            </p> -->
         </section>
     </header>
     <main class="mainArea">
@@ -54,11 +54,16 @@
                     </div>
                 </div>
                 <div class="bettingBox">
-                    <div class="title">
-                        <p>球隊</p>
-                        <p>目前競投金額</p>
-                        <p>&ensp;</p>
-                    </div>
+                    <ul class="title">
+                        <li>球隊</li>
+                        <li>目前競投金額</li>
+                        <li>
+                            <div class="rowBox left">
+                                <p>實貨量</p>
+                                <p>總量</p>
+                            </div>
+                        </li>
+                    </ul>
                     <div class="outerBox">
                         <div class="tableBox">
                             <ul>
@@ -185,11 +190,16 @@
                     </div>
                 </div>
                 <div class="bettingBox">
-                    <div class="title">
-                        <p>球隊</p>
-                        <p>目前競投金額</p>
-                        <p>&ensp;</p>
-                    </div>
+                    <ul class="title">
+                        <li>球隊</li>
+                        <li>目前競投金額</li>
+                        <li>
+                            <div class="rowBox right">
+                                <p>實貨量</p>
+                                <p>總量</p>
+                            </div>
+                        </li>
+                    </ul>
                     <div class="outerBox">
                         <div class="tableBox">
                             <ul>
@@ -250,7 +260,7 @@
     </main>
     <footer>
         <ul>
-            <li class="active">
+            <li>
                 <i class="rule_ic"></i>
                 <p>競投規則說明</p>
             </li>
@@ -258,15 +268,199 @@
                 <i class="record_ic"></i>
                 <p>競投紀錄</p>
             </li>
+            <li>
+                <i class="acting_ic"></i>
+                <p>代理報表</p>
+            </li>
         </ul>
-        <section class="center">
+        <!-- <section class="center">
             <p>
                 可用競投積分:
                 <span>000000</span>
             </p>
-        </section>
-        <button class="transBtn">我要轉點</button>
+        </section> -->
     </footer>
+    <div class="filter">
+        <div class="jumpWindow record">
+            <div class="title">
+                <p>競投紀錄</p>
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <ul class="topList">
+                    <li class="active">本週</li>
+                    <li>上週</li>
+                    <li>本月</li>
+                    <li>上月</li>
+                </ul>
+                <div class="recordBox">
+                    <div class="smallTitle">
+                        <ul>
+                            <li>日期</li>
+                            <li>單號</li>
+                            <li>隊伍</li>
+                            <li>點數</li>
+                            <li>得獎</li>
+                        </ul>
+                    </div>
+                    <div class="outerBox">
+                        <div class="tableBox">
+                            <ul>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>法國</p>
+                                    <p>700000</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>義大利</p>
+                                    <p>187500</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>巴西</p>
+                                    <p>2050</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>瑞典</p>
+                                    <p>10060</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>德國</p>
+                                    <p>22879</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>法國</p>
+                                    <p>3355</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>法國</p>
+                                    <p>3355</p>
+                                    <p>-</p>
+                                </li>
+                                <li>
+                                    <p>2022-11-05</p>
+                                    <p>125578485140</p>
+                                    <p>法國</p>
+                                    <p>3355</p>
+                                    <p>-</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="total">
+                        <li>
+                            <p>總額</p>
+                        </li>
+                        <li>
+                            <p>925844</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pageBox">
+                    <i class="arrow_left"></i>
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                    </ul>
+                    <i class="arrow_right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow rule">
+            <div class="title">
+                <p>規則說明</p>
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="textBox">
+                    <div class="outerBox">
+                        <div class="ruleBox">
+                            <p>規則說明..........規則說明規則說明規則說明規則說明規則說明規則說明規則說明規則說明規則說明</p>
+                            <p>規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則</p>
+                            <p>規則說明規則說明規則規則說明規則說明規則</p>
+                            <p class="mar">規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則</p>
+                            <p>規則說明..........規則說明規則說明規則說明規則說明規則說明規則說明規則說明規則說明規則說明</p>
+                            <p>規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則</p>
+                            <p>規則說明規則說明規則規則說明規則說明規則</p>
+                            <p class="mar">規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則</p>
+                            <p>規則說明..........規則說明規則說明規則說明規則說明規則說明規則說明規則說明規則說明規則說明</p>
+                            <p>規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則</p>
+                            <p>規則說明規則說明規則規則說明規則說明規則</p>
+                            <p>規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則規則說明規則說明規則</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="check">確定</button>
+            </div>
+        </div>
+        <div class="jumpWindow betting">
+            <div class="title">
+                <p>轉點</p>
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="bettingBox">
+                    <div class="smallTitle">
+                        <ul>
+                            <li>中心點數</li>
+                            <li>目前競投積分</li>
+                        </ul>
+                    </div>
+                    <div class="pointBox">
+                        <ul>
+                            <li>
+                                <p>25000</p>
+                            </li>
+                            <li>
+                                <p>1000</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="smallTitle">
+                        <ul>
+                            <li class="single">轉入點數</li>
+                        </ul>
+                    </div>
+                    <div class="bettingCnt">
+                        <label class="inputBox">
+                            <input type="text" value="0">
+                        </label>
+                        <div class="btnBox">
+                            <button>100</button>
+                            <button>500</button>
+                            <button>1000</button>
+                            <button>3000</button>
+                            <button>5000</button>
+                            <button>10000</button>
+                            <button>清除</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lastBox">
+                    <button class="check">確定轉入</button>
+                    <button>全部轉回中心錢包</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bg style_1"></div>
 </body>
 </html>

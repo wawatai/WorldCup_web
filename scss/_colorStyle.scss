@@ -6,19 +6,6 @@ $header_RemindColor: #32ffe9;
 $header_bgType_Border: #734428;
 $header_bgType_ActiveBorder: #ffeba8;
 $header_bgType_ActiveShadow: #00000080;
-@mixin footer_transBtn {
-    background: linear-gradient(to top,#fb334b 0%,#c30b2a 50%,#fb334b 100%);
-    border-radius: 10px;
-    border: solid 1px #f4e1a3;
-    box-shadow: 0 3px 8px 0 #00000080;
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: bold;
-
-    &:hover,&:active,&.active {
-        background: linear-gradient(to top,#fb334b 0%,#c30b2a 92%);
-    }
-}
 @mixin footer_typeBtn {
     background: linear-gradient(to top,#1b3180 0%,#1d46a4 100%);
     border-radius: 10px 10px 0 0;
@@ -75,6 +62,137 @@ $mainArea_BonusColor_2: linear-gradient(to top,#efe7e7 16%,#c1b6b6 45%,#efe7e7 7
         color: #ffffff;
     }
 }
+@mixin rowBox {
+    background: linear-gradient(to top,#ffffff 0%,#d4d4d4 100%);
+    border-radius: 30px;
+    border: solid 1px #474747;
+    box-sizing: 0 2px 5px 0 #00000080;
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px;
+    cursor: pointer;
+}
+@mixin rowBox_linear_1 {
+    background: linear-gradient(to top,#06b6e8 0%,#1972e0 17%,#06b6e8 100%);
+    border-radius: 30px;
+    border: solid 1px #44ccee;
+    color: #ffffff;
+}
+@mixin rowBox_linear_2 {
+    background: linear-gradient(to top,#11d416 0%,#0c8b1b 17%,#11d416 100%);
+    border-radius: 30px;
+    border: solid 1px #1deb27;
+    color: #ffffff;
+}
+
+//jumpWindow
+$filter: #00000080;
+$jumpWindow_BG: linear-gradient(to top,#bf8935 5%,#eab95a 49%,#eab95a 87%,#f9d87f 100%);
+$jumpWindow_Border: #fff8c1;
+$jumpWindow_TitleColor: #161616;
+$jumpWindow_CloseBG: linear-gradient(to top,#c31f17 0%,#971c1c 47%,#c31f17 100%);
+@mixin topList {
+    background: linear-gradient(to top,#f7e9d6 0%,#ffffff 100%);
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #ffffff;
+    border-bottom: none;
+    color: #161616;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#102e90 0%,#1d46a4 100%);
+        border-color: #123192;
+        color: #ffffff;
+    }
+}
+$jumpWindow_topList_Border: #112f90;
+$jumpWindow_Table_Border: #fff8c1;
+$jumpWindow_Table_Border_2: #917548;
+$jumpWindow_Table_TitleBG: linear-gradient(to top,#9a6221 0%,#6e4111 49%,#9a6221 100%);
+$jumpWindow_Table_TitleColor: #ffffff;
+$jumpWindow_Table_Color: #252525;
+$jumpWindow_Table_innerBorder: #b39c77;
+$jumpWindow_Table_BG: #ffffff;
+$jumpWindow_Table_totalBG: #1d3c83;
+$jumpWindow_Table_totalColor: #ffffff;
+$jumpWindow_Table_totalBorder: #ffffff;
+@mixin pageBox {
+    background: transparent;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: #1d46a4;
+        border-color: #1d46a4;
+    }
+}
+@mixin checkBtn {
+    background: linear-gradient(to top,#1251df 0%,#0826a8 50%,#1251df 100%);
+    border-radius: 5px;
+    border: solid 1px #f4e1a3;
+    box-shadow: 0 5px 8px 0 #00000049;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#1251df 0%,#0826a8 75%);
+    }
+}
+@mixin reBtn {
+    background: linear-gradient(to top,#07a107 3%,#0a5f08 49%,#07a107 90%);
+    border-radius: 5px;
+    border: solid 1px #f4e1a3;
+    box-shadow: 0 5px 8px 0 #00000049;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#07a107 3%,#0a5f08 69%);
+    }
+}
+@mixin betBtn {
+    background: linear-gradient(to top,#dec8a6 0%,#fffcf8 68%);
+    border-radius: 5px;
+    border: solid 1px #a06d15;
+    color: #252525;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #970e08;
+        border-color: #970e08;
+        color: #ffffff;
+    }
+}
+
+//input
+@mixin inputStyle_1 {
+    background: #ebebeb;
+    border-radius: 5px;
+    border: solid 1px #6b6b6b;
+    color: #eb0d0d;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
 
 
 //套件
@@ -87,6 +205,16 @@ $mainArea_BonusColor_2: linear-gradient(to top,#efe7e7 16%,#c1b6b6 45%,#efe7e7 7
 
     &::-webkit-scrollbar-thumb {
         background: #e8d793;
+        border-radius: 10px;
+    }
+}
+@mixin scrollBar_2 {
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #a06d15;
         border-radius: 10px;
     }
 }

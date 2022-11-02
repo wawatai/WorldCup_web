@@ -1,0 +1,453 @@
+.filter {
+    width: 100%;
+    height: 100%;
+    background: $filter;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &.display {
+        display: flex;
+    }
+
+    .jumpWindow {
+        background: $jumpWindow_BG;
+        border-radius: 12px;
+        border: solid 1px $jumpWindow_Border;
+        overflow: hidden;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        .title {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            p {
+                color: $jumpWindow_TitleColor;
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            i {
+                width: 50px;
+                height: 50px;
+                background: $jumpWindow_CloseBG;
+                border: solid 1px $jumpWindow_Border;
+                border-width: 0 0 1px 1px;
+                border-radius: 0 12px 0 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+        }
+
+        &.record {
+            width: 800px;
+            height: 530px;
+
+            .content {
+                width: 100%;
+                height: auto;
+                padding: 32px 32px 0;
+
+                .topList {
+                    width: 100%;
+                    height: auto;
+                    border-bottom: solid 3px $jumpWindow_topList_Border;
+                    display: flex;
+                    margin-bottom: 20px;
+
+                    li {
+                        width: 80px;
+                        height: 37px;
+                        @include topList;
+                        margin-right: 8px;
+                    }
+                }
+
+                .recordBox {
+                    width: 100%;
+                    height: auto;
+                    border: solid 1px $jumpWindow_Table_Border;
+
+                    .smallTitle {
+                        width: 100%;
+                        height: 40px;
+
+                        ul {
+                            width: 100%;
+                            height: 100%;
+                            background: $jumpWindow_Table_TitleBG;
+                            display: flex;
+                            align-items: center;
+                            padding-right: 5px;
+
+                            li {
+                                border-right: solid 1px $jumpWindow_Table_Border;
+                                color: $jumpWindow_Table_TitleColor;
+                                font-size: 18px;
+                                font-weight: bold;
+                                text-align: center;
+
+                                &:nth-of-type(1) {
+                                    width: 20%;
+                                }
+                                &:nth-of-type(2) {
+                                    width: 25%;
+                                }
+                                &:nth-of-type(3) {
+                                    width: 15%;
+                                }
+                                &:nth-of-type(4) {
+                                    width: 20%;
+                                }
+                                &:last-child {
+                                    width: 20%;
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .outerBox {
+                        width: 100%;
+                        height: 240px;
+                        background: $jumpWindow_Table_BG;
+                        padding-right: 5px;
+
+                        .tableBox {
+                            width: 100%;
+                            height: 100%;
+                            overflow-y: overlay;
+                            @include scrollBar_2;
+
+                            ul {
+                                width: 100%;
+                                height: auto;
+                                
+                                li {
+                                    width: 100%;
+                                    height: 40px;
+                                    border-bottom: solid 1px $jumpWindow_Table_innerBorder;
+                                    display: flex;
+                                    align-items: center;
+
+                                    &:last-child {
+                                        border: none;
+                                    }
+
+                                    p {
+                                        border-right: solid 1px $jumpWindow_Table_Border;
+                                        color: $jumpWindow_Table_Color;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                        text-align: center;
+
+                                        &:nth-of-type(1) {
+                                            width: 20%;
+                                        }
+                                        &:nth-of-type(2) {
+                                            width: 25%;
+                                        }
+                                        &:nth-of-type(3) {
+                                            width: 15%;
+                                        }
+                                        &:nth-of-type(4) {
+                                            width: 20%;
+                                        }
+                                        &:last-child {
+                                            width: 20%;
+                                            border: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .total {
+                        width: 100%;
+                        height: 40px;
+                        background: $jumpWindow_Table_totalBG;
+                        display: flex;
+                        padding-right: 5px;
+
+                        li {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+
+                            &:nth-of-type(1) {
+                                width: 20%;
+                            }
+
+                            &:last-child {
+                                width: 80%;
+
+                                p {
+                                    border: none;
+                                }
+                            }
+
+                            p {
+                                width: 100%;
+                                border-right: solid 1px $jumpWindow_Table_totalBorder;
+                                color: $jumpWindow_Table_totalColor;
+                                font-size: 18px;
+                                font-weight: bold;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                .pageBox {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-top: 10px;
+
+                    i {
+                        width: 7px;
+                        height: 9px;
+                        cursor: pointer;
+
+                        &.arrow_right {
+                            transform: scaleX(-1);
+                        }
+                    }
+
+                    ul {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        margin: 0 10px;
+
+                        li {
+                            width: 22px;
+                            height: 22px;
+                            @include pageBox;
+                            margin-right: 10px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.rule {
+            width: 650px;
+            height: 540px;
+
+            .content {
+                width: 100%;
+                height: auto;
+                padding: 32px 32px 0;
+
+                .textBox {
+                    width: 100%;
+                    height: 350px;
+                    background: $jumpWindow_Table_BG;
+
+                    .outerBox {
+                        width: 100%;
+                        height: 100%;
+                        padding-right: 5px;
+
+                        .ruleBox {
+                            width: 100%;
+                            height: 100%;
+                            overflow-y: overlay;
+                            padding: 16px;
+                            @include scrollBar_2;
+
+                            p {
+                                color: $jumpWindow_Table_Color;
+                                font-size: 20px;
+                                font-weight: bold;
+                                line-height: 36px;
+
+                                &.mar {
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .check {
+                    width: 242px;
+                    height: 47px;
+                    @include checkBtn;
+                    display: block;
+                    margin: 30px auto 0;
+                }
+            }
+        }
+
+        &.betting {
+            width: 412px;
+            height: 504px;
+
+            .content {
+                width: 100%;
+                height: auto;
+                padding: 16px 24px 0;
+
+                .bettingBox {
+                    width: 100%;
+                    height: auto;
+                    background: $jumpWindow_Table_BG;
+                    border: solid 1px $jumpWindow_Table_Border_2;
+
+                    .smallTitle {
+                        width: 100%;
+                        height: 40px;
+
+                        ul {
+                            width: 100%;
+                            height: 100%;
+                            background: $jumpWindow_Table_TitleBG;
+                            display: flex;
+
+                            li {
+                                width: 50%;
+                                height: 100%;
+                                color: $jumpWindow_Table_TitleColor;
+                                font-size: 18px;
+                                font-weight: bold;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                &.single {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    .pointBox {
+                        width: 100%;
+                        height: 40px;
+
+                        ul {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+
+                            li {
+                                width: 50%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                &:last-child {
+
+                                    p {
+                                        border: none;
+                                    }
+                                }
+
+                                p {
+                                    width: 100%;
+                                    border-right: solid 1px $jumpWindow_Table_Border_2;
+                                    color: $jumpWindow_Table_Color;
+                                    font-size: 22px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .bettingCnt {
+                        width: 100%;
+                        height: auto;
+
+                        .inputBox {
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                            text-align: center;
+                            margin: 10px 0 15px;
+
+                            input {
+                                width: 210px;
+                                height: 35px;
+                                @include inputStyle_1;
+                            }
+                        }
+
+                        .btnBox {
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: repeat(4,1fr);
+                            gap: 8px;
+                            padding: 0 10px 10px;
+
+                            button {
+                                width: auto;
+                                height: 35px;
+                                @include betBtn;
+
+                                &:last-child {
+                                    grid-column-start: -1;
+                                    grid-column-end: 3;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .lastBox {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 26px;
+
+                    button {
+                        width: 242px;
+                        height: 47px;
+                        display: block;
+                        margin: 0 auto;
+
+                        &:first-child {
+                            @include checkBtn;
+                            margin-bottom: 15px;
+                        }
+                        &:last-child {
+                            @include reBtn;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

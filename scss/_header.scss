@@ -7,14 +7,15 @@ header {
     position: relative;
 
     .center {
-        width: 839px;
+        width: 439px;
         height: 59px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: center;
         position: relative;
         margin: 0 auto;
-        padding: 0 80px;
+        // padding: 0 80px;
 
         &::before,
         &::after {

@@ -51,7 +51,7 @@ header .bgBtn_5 {
 }
 footer li i {
     background: url('../images/footer_typeIC.png') no-repeat;
-    background-size: 200%;
+    background-size: 300%;
 }
 
 .mainArea .dateBox i {
@@ -97,4 +97,14 @@ footer li i {
 .mainArea .bettingBox .Sweden {
     background: url('../images/flag/Sweden.png') no-repeat center;
     background-size: 100%;
+}
+
+.jumpWindow .close::before {
+    background: url('../images/jumpWindow_close.png') no-repeat center;
+    background-size: contain;
+}
+
+.pageBox i {
+    background: url('../images/pageBox_arrow.png') no-repeat center;
+    background-size: contain;
 }

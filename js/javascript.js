@@ -57,43 +57,121 @@ $(function(){
 });
 
 $(function(){
-    var cw = $("header .center");
-    var fw = $("footer .center");
-    var ww = window.innerWidth;
+    $(".jumpWindow .close,.jumpWindow .check").on("click",function(){
+        $(".filter")
+        .removeClass("display");
+    })
 
-    if(ww > 1450)
-    {
-        cw.css("width", (String(839) + "px"));
-        fw.css("width", (String(478) + "px"));
-    }
-    else if(ww <= 1450 && ww > 1300)
-    {
-        cw.css("width", (String(ww - 610) + "px"));
-        fw.css("width", (String(ww - 972) + "px"));
-    }
-    else
-    {
-        cw.css("width", (String(691) + "px"));
-        fw.css("width", (String(330) + "px"));
-    }
+    $("footer ul li").on("click",function(){
+        var n = $(this).index();
 
-    $(window).resize(function () {
-        var cw = $("header .center");
-        var ww = window.innerWidth;
-        if(ww > 1450)
+        if(n == 0)
         {
-            cw.css("width", (String(839) + "px"));
-            fw.css("width", (String(478) + "px"));
+            $(".filter,.jumpWindow.record")
+            .addClass("display")
+            .siblings().removeClass("display");
         }
-        else if(ww <= 1450 && ww > 1300)
+        else if(n == 1)
         {
-            cw.css("width", (String(ww - 610) + "px"));
-            fw.css("width", (String(ww - 972) + "px"));
+            $(".filter,.jumpWindow.rule")
+            .addClass("display")
+            .siblings().removeClass("display");
         }
-        else
-        {
-            cw.css("width", (String(691) + "px"));
-            fw.css("width", (String(330) + "px"));
-        }
-    });
+    })
+
+    $(".gameBox .tableBox button").on("click",function(){
+        $(".filter,.jumpWindow.betting")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
 })
+
+$(function(){
+    $(".jumpWindow .topList li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+
+    $(".jumpWindow .pageBox li").on("click",function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+
+    $(".rowBox").on("click",function(){
+        if($(this).hasClass("left"))
+        {
+            $(this)
+            .removeClass("left")
+            .addClass("right");
+        }
+        else{
+            $(this)
+            .removeClass("right")
+            .addClass("left");
+        }
+    })
+})
+
+// $(function(){
+//     var cw = $("header .center");
+//     var fw = $("footer .center");
+//     var ww = window.innerWidth;
+
+//     if(ww > 1450)
+//     {
+//         cw.css("width", (String(839) + "px"));
+//     }
+//     else if(ww <= 1450 && ww > 1300)
+//     {
+//         cw.css("width", (String(ww - 610) + "px"));
+//     }
+//     else
+//     {
+//         cw.css("width", (String(691) + "px"));
+//     }
+
+//     if(ww > 1560)
+//     {
+//         fw.css("width", (String(478) + "px"));
+//     }
+//     else if(ww <= 1560 && ww > 1410)
+//     {
+//         fw.css("width", (String(ww - 1082) + "px"));
+//     }
+//     else
+//     {
+//         fw.css("width", (String(330) + "px"));
+//     }
+
+//     $(window).resize(function () {
+//         var cw = $("header .center");
+//         var ww = window.innerWidth;
+//         if(ww > 1450)
+//         {
+//             cw.css("width", (String(839) + "px"));
+//         }
+//         else if(ww <= 1450 && ww > 1300)
+//         {
+//             cw.css("width", (String(ww - 610) + "px"));
+//         }
+//         else
+//         {
+//             cw.css("width", (String(691) + "px"));
+//         }
+
+//         if(ww > 1560)
+//         {
+//             fw.css("width", (String(478) + "px"));
+//         }
+//         else if(ww <= 1560 && ww > 1410)
+//         {
+//             fw.css("width", (String(ww - 1082) + "px"));
+//         }
+//         else
+//         {
+//             fw.css("width", (String(330) + "px"));
+//         }
+//     });
+// })
