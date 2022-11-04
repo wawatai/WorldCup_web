@@ -1303,6 +1303,10 @@ html body .filter .jumpWindow.betting .content .lastBox button:last-child:hover,
   background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #07a107), color-stop(69%, #0a5f08));
   background: linear-gradient(to top, #07a107 3%, #0a5f08 69%);
 }
+html body .filter .jumpWindow.acting {
+  width: 800px;
+  height: 530px;
+}
 html body .bg {
   width: 100%;
   min-width: 1300px;
