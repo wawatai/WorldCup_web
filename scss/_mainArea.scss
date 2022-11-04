@@ -2,17 +2,18 @@
     width: 100%;
     min-width: 1300px;
     height: auto;
-    padding-top: 40px;
+    padding: 40px 0 130px;
 
     article {
         width: 1000px;
         height: auto;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px 10px;
         margin: 0 auto;
 
         .gameBox {
-            width: 495px;
+            width: auto;
             height: 696px;
             background: $mainArea_BG;
             border: solid 1px $mainArea_Border;

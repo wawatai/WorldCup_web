@@ -322,21 +322,20 @@ html body .mainArea {
   width: 100%;
   min-width: 1300px;
   height: auto;
-  padding-top: 40px;
+  padding: 40px 0 130px;
 }
 html body .mainArea article {
   width: 1000px;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 10px;
   margin: 0 auto;
 }
 html body .mainArea article .gameBox {
-  width: 495px;
+  width: auto;
   height: 696px;
   background: rgba(8, 35, 132, 0.7450980392);
   border: solid 1px #58bff4;
@@ -1311,7 +1310,7 @@ html body .bg {
   width: 100%;
   min-width: 1300px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -999;
