@@ -756,6 +756,13 @@
                                     text-align: center;
                                     white-space: nowrap;
                                     padding: 0 30px;
+
+                                    &.win {
+                                        color: $jumpWindow_acting_winColor;
+                                    }
+                                    &.lose {
+                                        color: $jumpWindow_acting_allLoseColor;
+                                    }
                                 }
                             }
                         }

@@ -1743,6 +1743,12 @@ html body .filter .jumpWindow.acting .content .right table tr td p {
   white-space: nowrap;
   padding: 0 30px;
 }
+html body .filter .jumpWindow.acting .content .right table tr td p.win {
+  color: #019e0f;
+}
+html body .filter .jumpWindow.acting .content .right table tr td p.lose {
+  color: #ff5842;
+}
 html body .bg {
   width: 100%;
   min-width: 1050px;
