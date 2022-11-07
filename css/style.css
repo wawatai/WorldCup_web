@@ -355,6 +355,16 @@ footer li i {
   background-size: 100%;
 }
 
+.selectBox .arrow_ic {
+  background: url("../images/arrow_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.inputBox .date_ic {
+  background: url("../images/date.png") no-repeat center;
+  background-size: contain;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -712,7 +722,13 @@ html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-sc
   width: 5px;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-scrollbar-thumb {
+  width: 5px;
   background: #e8d793;
+  border-radius: 10px;
+}
+html body .mainArea article .gameBox .bettingBox .outerBox .tableBox::-webkit-scrollbar-track {
+  width: 10px;
+  background: #ffffff;
   border-radius: 10px;
 }
 html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul {
@@ -1038,6 +1054,7 @@ html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox {
 }
 html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox::-webkit-scrollbar-thumb {
   background: #a06d15;
@@ -1213,6 +1230,7 @@ html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox {
 }
 html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox::-webkit-scrollbar-thumb {
   background: #a06d15;
@@ -1405,7 +1423,7 @@ html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox b
 }
 html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:hover, html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:active, html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button.active {
   background: #970e08;
-  border-color: #970e08;
+  border-color: #ffffff;
   color: #ffffff;
 }
 html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt .btnBox button:last-child {
@@ -1456,8 +1474,274 @@ html body .filter .jumpWindow.betting .content .lastBox button:last-child:hover,
   background: linear-gradient(to top, #07a107 3%, #0a5f08 69%);
 }
 html body .filter .jumpWindow.acting {
-  width: 800px;
-  height: 530px;
+  width: 1000px;
+  height: auto;
+  padding-bottom: 60px;
+}
+html body .filter .jumpWindow.acting .topBox {
+  width: 92%;
+  height: auto;
+  border-bottom: solid 3px #112f90;
+  padding: 10px 5px;
+  margin: 0 auto 20px;
+}
+html body .filter .jumpWindow.acting .topBox .row {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 8px;
+}
+html body .filter .jumpWindow.acting .topBox .row:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.acting .topBox .row .smallTitle {
+  width: 85px;
+  color: #161616;
+  font-size: 17px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox {
+  display: block;
+  width: 284px;
+  height: 45px;
+  position: relative;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox select {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #9b6d22;
+  color: #161616;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.acting .topBox .row .selectBox i {
+  width: 18px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox {
+  width: 284px;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #9b6d22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox input {
+  background: none;
+  border: none;
+  color: #161616;
+  font-size: 15px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox p {
+  color: #878787;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.acting .topBox .row .inputBox i {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+}
+html body .filter .jumpWindow.acting .topBox .row .btnBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow.acting .topBox .row .btnBox button {
+  width: 60px;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dec8a6), color-stop(68%, #fffcf8));
+  background: linear-gradient(to top, #dec8a6 0%, #fffcf8 68%);
+  border-radius: 5px;
+  border: solid 1px #a06d15;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+html body .filter .jumpWindow.acting .topBox .row .btnBox button:hover, html body .filter .jumpWindow.acting .topBox .row .btnBox button:active, html body .filter .jumpWindow.acting .topBox .row .btnBox button.active {
+  background: #970e08;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.acting .topBox .row .btnBox button:first-child {
+  margin-left: 8px;
+}
+html body .filter .jumpWindow.acting .topBox .row .check {
+  width: 130px;
+  height: 42px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(50%, #0826a8), to(#1251df));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 50%, #1251df 100%);
+  border-radius: 5px;
+  border: solid 1px #f4e1a3;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: -5px;
+}
+html body .filter .jumpWindow.acting .topBox .row .check:hover, html body .filter .jumpWindow.acting .topBox .row .check:active, html body .filter .jumpWindow.acting .topBox .row .check.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
+  background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
+}
+html body .filter .jumpWindow.acting .content {
+  width: 92%;
+  height: auto;
+  background: #ffffff;
+  border: solid 1px #fff8c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow.acting .content .left {
+  width: 120px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.acting .content .left table {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.acting .content .left table tr:first-child td {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .left table tr:first-child td p {
+  border-color: #fff8c1;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+html body .filter .jumpWindow.acting .content .left table tr:last-child td {
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .left table tr:last-child td p {
+  color: #ffffff;
+  border-color: #ffffff;
+  text-decoration: none;
+}
+html body .filter .jumpWindow.acting .content .left table tr td {
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.acting .content .left table tr td p {
+  width: 100%;
+  border-right: solid 1px #b39c77;
+  color: #c68b18;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+html body .filter .jumpWindow.acting .content .right {
+  width: 100%;
+  height: auto;
+  overflow-x: overlay;
+}
+html body .filter .jumpWindow.acting .content .right::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+html body .filter .jumpWindow.acting .content .right::-webkit-scrollbar-thumb {
+  background: #a06d15;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.acting .content .right table {
+  width: auto;
+  height: auto;
+}
+html body .filter .jumpWindow.acting .content .right table tr:last-child td {
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .right table tr:last-child td p {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.acting .content .right table tr:last-child td p.allWin {
+  color: #20ff34;
+}
+html body .filter .jumpWindow.acting .content .right table tr:last-child td p.allLose {
+  color: #ff5842;
+}
+html body .filter .jumpWindow.acting .content .right table tr th {
+  height: 40px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.acting .content .right table tr th:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .right table tr th p {
+  width: 100%;
+  border-right: solid 1px #fff8c1;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.acting .content .right table tr td {
+  width: auto;
+  min-width: 120px;
+  height: 40px;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.acting .content .right table tr td:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.acting .content .right table tr td p {
+  width: 100%;
+  border-right: solid 1px #b39c77;
+  color: #252525;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 30px;
 }
 html body .bg {
   width: 100%;

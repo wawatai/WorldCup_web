@@ -125,6 +125,7 @@ $jumpWindow_Table_BG: #ffffff;
 $jumpWindow_Table_totalBG: #1d3c83;
 $jumpWindow_Table_totalColor: #ffffff;
 $jumpWindow_Table_totalBorder: #ffffff;
+$jumpWindow_Table_firstColor: #c68b18;
 @mixin pageBox {
     background: transparent;
     border: solid 1px #ffffff;
@@ -178,7 +179,7 @@ $jumpWindow_Table_totalBorder: #ffffff;
 
     &:hover,&:active,&.active {
         background: #970e08;
-        border-color: #970e08;
+        border-color: #ffffff;
         color: #ffffff;
     }
 }
@@ -187,6 +188,8 @@ $jumpWindow_rule_mainTeamColor: #ec0a10;
 $jumpWindow_rule_cusTeamColor: #048e0c;
 $jumpWindow_rule_mainWinBG: #d1050a;
 $jumpWindow_rule_cusWinBG: #108308;
+$jumpWindow_acting_allWinColor: #20ff34;
+$jumpWindow_acting_allLoseColor: #ff5842;
 
 //input
 @mixin inputStyle_1 {
@@ -197,6 +200,30 @@ $jumpWindow_rule_cusWinBG: #108308;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+}
+@mixin inputStyle_2 {
+    background: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #9b6d22;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+}
+$inputStyle_2_Color: #161616;
+$inputStyle_2_midColor: #878787;
+
+//select
+@mixin selectStyle_1 {
+    background: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #9b6d22;
+    color: #161616;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: pointer;
 }
 
 
@@ -209,13 +236,21 @@ $jumpWindow_rule_cusWinBG: #108308;
     }
 
     &::-webkit-scrollbar-thumb {
+        width: 5px;
         background: #e8d793;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        width: 10px;
+        background: #ffffff;
         border-radius: 10px;
     }
 }
 @mixin scrollBar_2 {
     &::-webkit-scrollbar {
         width: 5px;
+        height: 5px;
     }
 
     &::-webkit-scrollbar-thumb {
