@@ -367,7 +367,7 @@ html body {
 }
 html body header {
   width: 100%;
-  min-width: 1300px;
+  min-width: 1050px;
   height: 70px;
   background: -webkit-gradient(linear, left top, right top, from(#d7a950), color-stop(6%, #bf8935), color-stop(49%, #f3e19a), color-stop(93%, #bf8935), to(#d7a950));
   background: linear-gradient(to right, #d7a950 0%, #bf8935 6%, #f3e19a 49%, #bf8935 93%, #d7a950 100%);
@@ -445,7 +445,7 @@ html body header ul li:hover, html body header ul li:active, html body header ul
 }
 html body .mainArea {
   width: 100%;
-  min-width: 1300px;
+  min-width: 1050px;
   height: auto;
   padding: 40px 0 130px;
 }
@@ -777,7 +777,7 @@ html body .mainArea article .gameBox .bettingBox .outerBox .tableBox ul li div b
 }
 html body footer {
   width: 100%;
-  min-width: 1300px;
+  min-width: 1050px;
   height: 70px;
   background: -webkit-gradient(linear, left top, right top, from(#d7a950), color-stop(6%, #bf8935), color-stop(49%, #f3e19a), color-stop(93%, #bf8935), to(#d7a950));
   background: linear-gradient(to right, #d7a950 0%, #bf8935 6%, #f3e19a 49%, #bf8935 93%, #d7a950 100%);
@@ -1460,7 +1460,7 @@ html body .filter .jumpWindow.acting {
 }
 html body .bg {
   width: 100%;
-  min-width: 1300px;
+  min-width: 1050px;
   height: 100%;
   position: fixed;
   top: 0;
