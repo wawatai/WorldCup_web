@@ -252,11 +252,37 @@ $inputStyle_2_midColor: #878787;
 @mixin scrollBar_2 {
     &::-webkit-scrollbar {
         width: 5px;
-        height: 5px;
     }
 
     &::-webkit-scrollbar-thumb {
         background: #a06d15;
+        border-radius: 10px;
+    }
+}
+
+@mixin scrollBar_2 {
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #a06d15;
+        border-radius: 10px;
+    }
+}
+
+@mixin scrollBar_3 {
+    &::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #6e4111;
         border-radius: 10px;
     }
 }

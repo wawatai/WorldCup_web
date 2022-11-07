@@ -20,6 +20,7 @@
         border: solid 1px $jumpWindow_Border;
         overflow: hidden;
         display: none;
+        margin-bottom: 100px;
 
         &.display {
             display: block;
@@ -502,7 +503,6 @@
         &.acting {
             width: 1000px;
             height: auto;
-            padding-bottom: 60px;
 
             .topBox {
                 width: 92%;
@@ -647,6 +647,7 @@
                             &:last-child {
                                 
                                 td {
+                                    height: 60px;
                                     background: $jumpWindow_Table_totalBG;
                                     border: none;
         
@@ -668,7 +669,7 @@
                                     width: 100%;
                                     border-right: solid 1px $jumpWindow_Table_innerBorder;
                                     color: $jumpWindow_Table_firstColor;
-                                    font-size: 20px;
+                                    font-size: 18px;
                                     font-weight: bold;
                                     text-decoration: underline;
                                     text-align: center;
@@ -682,7 +683,7 @@
                     width: 100%;
                     height: auto;
                     overflow-x: overlay;
-                    @include scrollBar_2;
+                    @include scrollBar_3;
 
                     table {
                         width: auto;
@@ -693,6 +694,7 @@
                             &:last-child {
 
                                 td {
+                                    height: 60px;
                                     background: $jumpWindow_Table_totalBG;
                                     border: none;
 
@@ -751,7 +753,7 @@
                                     width: 100%;
                                     border-right: solid 1px $jumpWindow_Table_innerBorder;
                                     color: $jumpWindow_Table_Color;
-                                    font-size: 20px;
+                                    font-size: 18px;
                                     font-weight: bold;
                                     text-align: center;
                                     white-space: nowrap;
@@ -765,6 +767,44 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+
+            .pageBox {
+                width: 92%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: 0 auto;
+                padding: 20px 0;
+
+                i {
+                    width: 7px;
+                    height: 9px;
+                    cursor: pointer;
+
+                    &.arrow_right {
+                        transform: scaleX(-1);
+                    }
+                }
+
+                ul {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    margin: 0 10px;
+
+                    li {
+                        width: 22px;
+                        height: 22px;
+                        @include pageBox;
+                        margin-right: 10px;
+
+                        &:last-child {
+                            margin: 0;
                         }
                     }
                 }

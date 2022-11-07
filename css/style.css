@@ -903,6 +903,7 @@ html body .filter .jumpWindow {
   border: solid 1px #fff8c1;
   overflow: hidden;
   display: none;
+  margin-bottom: 100px;
 }
 html body .filter .jumpWindow.display {
   display: block;
@@ -1054,7 +1055,6 @@ html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox {
 }
 html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox::-webkit-scrollbar {
   width: 5px;
-  height: 5px;
 }
 html body .filter .jumpWindow.record .content .recordBox .outerBox .tableBox::-webkit-scrollbar-thumb {
   background: #a06d15;
@@ -1230,7 +1230,6 @@ html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox {
 }
 html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox::-webkit-scrollbar {
   width: 5px;
-  height: 5px;
 }
 html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox::-webkit-scrollbar-thumb {
   background: #a06d15;
@@ -1476,7 +1475,6 @@ html body .filter .jumpWindow.betting .content .lastBox button:last-child:hover,
 html body .filter .jumpWindow.acting {
   width: 1000px;
   height: auto;
-  padding-bottom: 60px;
 }
 html body .filter .jumpWindow.acting .topBox {
   width: 92%;
@@ -1651,6 +1649,7 @@ html body .filter .jumpWindow.acting .content .left table tr:first-child td p {
   text-decoration: none;
 }
 html body .filter .jumpWindow.acting .content .left table tr:last-child td {
+  height: 60px;
   background: #1d3c83;
   border: none;
 }
@@ -1669,7 +1668,7 @@ html body .filter .jumpWindow.acting .content .left table tr td p {
   width: 100%;
   border-right: solid 1px #b39c77;
   color: #c68b18;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
@@ -1680,11 +1679,14 @@ html body .filter .jumpWindow.acting .content .right {
   overflow-x: overlay;
 }
 html body .filter .jumpWindow.acting .content .right::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  height: 10px;
 }
 html body .filter .jumpWindow.acting .content .right::-webkit-scrollbar-thumb {
-  background: #a06d15;
+  background: #ffffff;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.acting .content .right::-webkit-scrollbar-track {
+  background: #6e4111;
   border-radius: 10px;
 }
 html body .filter .jumpWindow.acting .content .right table {
@@ -1692,6 +1694,7 @@ html body .filter .jumpWindow.acting .content .right table {
   height: auto;
 }
 html body .filter .jumpWindow.acting .content .right table tr:last-child td {
+  height: 60px;
   background: #1d3c83;
   border: none;
 }
@@ -1737,7 +1740,7 @@ html body .filter .jumpWindow.acting .content .right table tr td p {
   width: 100%;
   border-right: solid 1px #b39c77;
   color: #252525;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
@@ -1748,6 +1751,66 @@ html body .filter .jumpWindow.acting .content .right table tr td p.win {
 }
 html body .filter .jumpWindow.acting .content .right table tr td p.lose {
   color: #ff5842;
+}
+html body .filter .jumpWindow.acting .pageBox {
+  width: 92%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.acting .pageBox i {
+  width: 7px;
+  height: 9px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.acting .pageBox i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .filter .jumpWindow.acting .pageBox ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+html body .filter .jumpWindow.acting .pageBox ul li {
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.acting .pageBox ul li:hover, html body .filter .jumpWindow.acting .pageBox ul li:active, html body .filter .jumpWindow.acting .pageBox ul li.active {
+  background: #1d46a4;
+  border-color: #1d46a4;
+}
+html body .filter .jumpWindow.acting .pageBox ul li:last-child {
+  margin: 0;
 }
 html body .bg {
   width: 100%;
