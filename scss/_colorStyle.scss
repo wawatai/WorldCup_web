@@ -182,6 +182,11 @@ $jumpWindow_Table_totalBorder: #ffffff;
         color: #ffffff;
     }
 }
+$jumpWindow_rule_remindColor: #ffffff;
+$jumpWindow_rule_mainTeamColor: #ec0a10;
+$jumpWindow_rule_cusTeamColor: #048e0c;
+$jumpWindow_rule_mainWinBG: #d1050a;
+$jumpWindow_rule_cusWinBG: #108308;
 
 //input
 @mixin inputStyle_1 {

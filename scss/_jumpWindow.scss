@@ -298,10 +298,51 @@
                                 color: $jumpWindow_Table_Color;
                                 font-size: 20px;
                                 font-weight: bold;
-                                line-height: 36px;
+                                line-height: 32px;
 
                                 &.mar {
                                     margin-bottom: 20px;
+                                }
+                            }
+
+                            .imgBox {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                margin-bottom: 20px;
+
+                                .img {
+                                    width: 254px;
+                                    height: 358px;
+                                    flex-shrink: 0;
+                                    margin-right: 10px;
+                                }
+
+                                .textBox {
+                                    height: auto;
+
+                                    p {
+
+                                        &.mainTeam {
+                                            color: $jumpWindow_rule_mainTeamColor;
+                                        }
+                                        &.cusTeam {
+                                            color: $jumpWindow_rule_cusTeamColor;
+                                        }
+
+                                        span {
+                                            display: inline-block;
+                                            color: $jumpWindow_rule_remindColor;
+                                            padding: 3px 10px;
+
+                                            &.mainWin {
+                                                background: $jumpWindow_rule_mainWinBG;
+                                            }
+                                            &.cusWin {
+                                                background: $jumpWindow_rule_cusWinBG;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

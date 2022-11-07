@@ -66,45 +66,147 @@ footer li i {
     background: url('../images/bonus_number.png') no-repeat;
     background-size: 100%;
 }
-.mainArea .bettingBox .Brazil {
-    background: url('../images/flag/Brazil.png') no-repeat center;
-    background-size: 100%;
-}
-.mainArea .bettingBox .Germany {
-    background: url('../images/flag/Germany.png') no-repeat center;
-    background-size: 100%;
-}
-.mainArea .bettingBox .the_Netherlands {
-    background: url('../images/flag/Netherlands.png') no-repeat center;
-    background-size: 100%;
-}
-.mainArea .bettingBox .Franch {
-    background: url('../images/flag/Franch.png') no-repeat center;
-    background-size: 100%;
-}
-.mainArea .bettingBox .England {
-    background: url('../images/flag/England.png') no-repeat center;
-    background-size: 100%;
-}
-.mainArea .bettingBox .Argentina {
-    background: url('../images/flag/Argentina.png') no-repeat center;
-    background-size: 100%;
-}
-.mainArea .bettingBox .italy {
-    background: url('../images/flag/italy.png') no-repeat center;
-    background-size: 100%;
-}
-.mainArea .bettingBox .Sweden {
-    background: url('../images/flag/Sweden.png') no-repeat center;
-    background-size: 100%;
-}
 
 .jumpWindow .close::before {
     background: url('../images/jumpWindow_close.png') no-repeat center;
+    background-size: contain;
+}
+.jumpWindow.rule .imgBox .img {
+    background: url('../images/ruleImg.jpg') no-repeat;
     background-size: contain;
 }
 
 .pageBox i {
     background: url('../images/pageBox_arrow.png') no-repeat center;
     background-size: contain;
+}
+
+//國旗
+.mainArea .bettingBox .America {
+    background: url('../images/flag/America.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Arabia {
+    background: url('../images/flag/Arabia.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Argentina {
+    background: url('../images/flag/Argentina.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Australia {
+    background: url('../images/flag/Ar.Australia.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Belgium {
+    background: url('../images/flag/Ar.Belgium.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Brazil {
+    background: url('../images/flag/Brazil.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Cameroon {
+    background: url('../images/flag/Cameroon.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Canada {
+    background: url('../images/flag/Canada.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .CostaRica {
+    background: url('../images/flag/CostaRica.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Croatia {
+    background: url('../images/flag/Croatia.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Denmark {
+    background: url('../images/flag/Denmark.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Ecuador {
+    background: url('../images/flag/Ecuador.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .England {
+    background: url('../images/flag/England.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Franch {
+    background: url('../images/flag/Franch.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Germany {
+    background: url('../images/flag/Germany.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Ghana {
+    background: url('../images/flag/Ghana.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Iran {
+    background: url('../images/flag/Iran.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Japan {
+    background: url('../images/flag/Japan.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Korea {
+    background: url('../images/flag/Korea.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Mexico {
+    background: url('../images/flag/Mexico.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Morocco {
+    background: url('../images/flag/Morocco.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Netherlands {
+    background: url('../images/flag/Netherlands.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Poland {
+    background: url('../images/flag/Poland.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Portugal {
+    background: url('../images/flag/Portugal.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Qatar {
+    background: url('../images/flag/Qatar.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Senegal {
+    background: url('../images/flag/Senegal.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Serbian {
+    background: url('../images/flag/Serbian.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Spain {
+    background: url('../images/flag/Spain.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Switzerland {
+    background: url('../images/flag/Switzerland.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Tunisia {
+    background: url('../images/flag/Tunisia.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Uruguay {
+    background: url('../images/flag/Uruguay.png') no-repeat center;
+    background-size: 100%;
+}
+.mainArea .bettingBox .Wales {
+    background: url('../images/flag/Wales.png') no-repeat center;
+    background-size: 100%;
 }

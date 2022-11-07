@@ -120,6 +120,18 @@ $(function(){
     })
 })
 
+$(function(){
+    var n = $(".mainArea .tableBox i").next();
+
+    $(n).each(function(){
+        if($(this).text().length > 5)
+        {
+            $(this)
+            .css("font-size","21px");
+        }
+    })
+})
+
 // $(function(){
 //     var cw = $("header .center");
 //     var fw = $("footer .center");
