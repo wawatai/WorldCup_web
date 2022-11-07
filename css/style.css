@@ -1186,7 +1186,7 @@ html body .filter .jumpWindow.record .content .pageBox ul li:last-child {
   margin: 0;
 }
 html body .filter .jumpWindow.rule {
-  width: 650px;
+  width: 785px;
   height: 540px;
 }
 html body .filter .jumpWindow.rule .content {
@@ -1232,14 +1232,14 @@ html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .img {
   width: 254px;
   height: 358px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 html body .filter .jumpWindow.rule .content .textBox .outerBox .ruleBox .imgBox .textBox {
   height: auto;

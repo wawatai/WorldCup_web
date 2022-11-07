@@ -130,6 +130,19 @@ $(function(){
             .css("font-size","21px");
         }
     })
+
+    $(".mainArea .tableBox .money").each(function(){
+        var h = $(this).text();
+
+        if(h == "-")
+        {
+            $(this).closest("div")
+            .css({
+                "justify-content" : "center",
+                "padding-right" : "40px"
+            });
+        }
+    })
 })
 
 // $(function(){
