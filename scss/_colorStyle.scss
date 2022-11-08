@@ -192,6 +192,10 @@ $jumpWindow_acting_winColor: #019e0f;
 $jumpWindow_acting_loseColor: #e71111;
 $jumpWindow_acting_allWinColor: #20ff34;
 $jumpWindow_acting_allLoseColor: #ff5842;
+$jumpWindow_actingDetail_codeColor: #888888;
+$jumpWindow_actingDetail_vsColor: #b0852c;
+$jumpWindow_actingDetail_betColor: #ff5b0b;
+$jumpWindow_actingDetail_mainTeamColor: #0926ff;
 
 //input
 @mixin inputStyle_1 {
@@ -259,18 +263,6 @@ $inputStyle_2_midColor: #878787;
         border-radius: 10px;
     }
 }
-
-@mixin scrollBar_2 {
-    &::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #a06d15;
-        border-radius: 10px;
-    }
-}
-
 @mixin scrollBar_3 {
     &::-webkit-scrollbar {
         height: 10px;

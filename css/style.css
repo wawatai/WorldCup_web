@@ -1628,13 +1628,13 @@ html body .filter .jumpWindow.acting .content {
   margin: 0 auto;
 }
 html body .filter .jumpWindow.acting .content .left {
-  width: 120px;
+  width: auto;
   height: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 html body .filter .jumpWindow.acting .content .left table {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 html body .filter .jumpWindow.acting .content .left table tr:first-child td {
@@ -1645,8 +1645,6 @@ html body .filter .jumpWindow.acting .content .left table tr:first-child td {
 html body .filter .jumpWindow.acting .content .left table tr:first-child td p {
   border-color: #fff8c1;
   color: #ffffff;
-  font-size: 18px;
-  text-decoration: none;
 }
 html body .filter .jumpWindow.acting .content .left table tr:last-child td {
   height: 60px;
@@ -1656,10 +1654,10 @@ html body .filter .jumpWindow.acting .content .left table tr:last-child td {
 html body .filter .jumpWindow.acting .content .left table tr:last-child td p {
   color: #ffffff;
   border-color: #ffffff;
-  text-decoration: none;
 }
 html body .filter .jumpWindow.acting .content .left table tr td {
-  width: 100%;
+  width: auto;
+  min-width: 120px;
   height: 40px;
   border-bottom: solid 1px #b39c77;
   vertical-align: middle;
@@ -1667,11 +1665,15 @@ html body .filter .jumpWindow.acting .content .left table tr td {
 html body .filter .jumpWindow.acting .content .left table tr td p {
   width: 100%;
   border-right: solid 1px #b39c77;
-  color: #c68b18;
+  color: #252525;
   font-size: 18px;
   font-weight: bold;
-  text-decoration: underline;
   text-align: center;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+html body .filter .jumpWindow.acting .content .left table tr td p span {
+  color: #c68b18;
 }
 html body .filter .jumpWindow.acting .content .right {
   width: 100%;
@@ -1752,6 +1754,11 @@ html body .filter .jumpWindow.acting .content .right table tr td p.win {
 html body .filter .jumpWindow.acting .content .right table tr td p.lose {
   color: #ff5842;
 }
+html body .filter .jumpWindow.acting .content .right table tr td p.clickable {
+  color: #c68b18;
+  text-decoration: underline;
+  cursor: pointer;
+}
 html body .filter .jumpWindow.acting .pageBox {
   width: 92%;
   height: auto;
@@ -1810,6 +1817,234 @@ html body .filter .jumpWindow.acting .pageBox ul li:hover, html body .filter .ju
   border-color: #1d46a4;
 }
 html body .filter .jumpWindow.acting .pageBox ul li:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.actingDetail {
+  width: 1000px;
+  height: auto;
+}
+html body .filter .jumpWindow.actingDetail .content {
+  width: 92%;
+  height: auto;
+  background: #ffffff;
+  border: solid 1px #fff8c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto 0;
+}
+html body .filter .jumpWindow.actingDetail .content .left {
+  width: auto;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.actingDetail .content .left table {
+  width: auto;
+  height: auto;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:first-child td {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:first-child td p {
+  color: #ffffff;
+  font-size: 18px;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:first-child td p::before {
+  background: #fff8c1;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:last-child td {
+  height: 60px;
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:last-child td p {
+  color: #ffffff;
+  font-size: 18px;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr:last-child td p::before {
+  background: #ffffff;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td {
+  width: auto;
+  min-width: 120px;
+  height: 45px;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p {
+  width: 100%;
+  color: #252525;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 18px;
+  position: relative;
+  padding: 0 20px;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 18px;
+  background: #b39c77;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p .code {
+  color: #888888;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p .bet {
+  color: #ff5b0b;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p .vs {
+  color: #b0852c;
+}
+html body .filter .jumpWindow.actingDetail .content .left table tr td p .mainTeam {
+  color: #0926ff;
+}
+html body .filter .jumpWindow.actingDetail .content .right {
+  width: 100%;
+  height: auto;
+  overflow-x: overlay;
+}
+html body .filter .jumpWindow.actingDetail .content .right::-webkit-scrollbar {
+  height: 10px;
+}
+html body .filter .jumpWindow.actingDetail .content .right::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.actingDetail .content .right::-webkit-scrollbar-track {
+  background: #6e4111;
+  border-radius: 10px;
+}
+html body .filter .jumpWindow.actingDetail .content .right table {
+  width: auto;
+  height: auto;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr:last-child td {
+  height: 60px;
+  background: #1d3c83;
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr:last-child td p {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr:last-child td p.allWin {
+  color: #20ff34;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr:last-child td p.allLose {
+  color: #ff5842;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr th {
+  height: 45px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a6221), color-stop(49%, #6e4111), to(#9a6221));
+  background: linear-gradient(to top, #9a6221 0%, #6e4111 49%, #9a6221 100%);
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr th:last-child p {
+  font-size: 14px;
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr th p {
+  width: 100%;
+  border-right: solid 1px #fff8c1;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td {
+  width: auto;
+  min-width: 120px;
+  height: 45px;
+  border-bottom: solid 1px #b39c77;
+  vertical-align: middle;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td:last-child p {
+  border: none;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td p {
+  width: 100%;
+  border-right: solid 1px #b39c77;
+  color: #252525;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td p.win {
+  color: #019e0f;
+}
+html body .filter .jumpWindow.actingDetail .content .right table tr td p.lose {
+  color: #ff5842;
+}
+html body .filter .jumpWindow.actingDetail .pageBox {
+  width: 92%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.actingDetail .pageBox i {
+  width: 7px;
+  height: 9px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.actingDetail .pageBox i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .filter .jumpWindow.actingDetail .pageBox ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+html body .filter .jumpWindow.actingDetail .pageBox ul li {
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.actingDetail .pageBox ul li:hover, html body .filter .jumpWindow.actingDetail .pageBox ul li:active, html body .filter .jumpWindow.actingDetail .pageBox ul li.active {
+  background: #1d46a4;
+  border-color: #1d46a4;
+}
+html body .filter .jumpWindow.actingDetail .pageBox ul li:last-child {
   margin: 0;
 }
 html body .bg {

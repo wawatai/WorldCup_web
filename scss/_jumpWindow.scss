@@ -620,12 +620,12 @@
                 margin: 0 auto;
 
                 .left {
-                    width: 120px;
+                    width: auto;
                     height: auto;
                     flex-shrink: 0;
 
                     table {
-                        width: 100%;
+                        width: auto;
                         height: auto;
 
                         tr {
@@ -639,8 +639,6 @@
                                     p {
                                         border-color: $jumpWindow_Border;
                                         color: $jumpWindow_Table_TitleColor;
-                                        font-size: 18px;
-                                        text-decoration: none;
                                     }
                                 }
                             }
@@ -654,13 +652,13 @@
                                     p {
                                         color: $jumpWindow_Table_totalColor;
                                         border-color: $jumpWindow_Table_totalBorder;
-                                        text-decoration: none;
                                     }
                                 }
                             }
 
                             td {
-                                width: 100%;
+                                width: auto;
+                                min-width: 120px;
                                 height: 40px;
                                 border-bottom: solid 1px $jumpWindow_Table_innerBorder;
                                 vertical-align: middle;
@@ -668,11 +666,16 @@
                                 p {
                                     width: 100%;
                                     border-right: solid 1px $jumpWindow_Table_innerBorder;
-                                    color: $jumpWindow_Table_firstColor;
+                                    color: $jumpWindow_Table_Color;
                                     font-size: 18px;
                                     font-weight: bold;
-                                    text-decoration: underline;
                                     text-align: center;
+                                    white-space: nowrap;
+                                    padding: 0 20px;
+
+                                    span {
+                                        color: $jumpWindow_Table_firstColor;
+                                    }
                                 }
                             }
                         }
@@ -758,6 +761,248 @@
                                     text-align: center;
                                     white-space: nowrap;
                                     padding: 0 30px;
+
+                                    &.win {
+                                        color: $jumpWindow_acting_winColor;
+                                    }
+                                    &.lose {
+                                        color: $jumpWindow_acting_allLoseColor;
+                                    }
+
+                                    &.clickable {
+                                        color: $jumpWindow_Table_firstColor;
+                                        text-decoration: underline;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pageBox {
+                width: 92%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: 0 auto;
+                padding: 20px 0;
+
+                i {
+                    width: 7px;
+                    height: 9px;
+                    cursor: pointer;
+
+                    &.arrow_right {
+                        transform: scaleX(-1);
+                    }
+                }
+
+                ul {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    margin: 0 10px;
+
+                    li {
+                        width: 22px;
+                        height: 22px;
+                        @include pageBox;
+                        margin-right: 10px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.actingDetail {
+            width: 1000px;
+            height: auto;
+
+            .content {
+                width: 92%;
+                height: auto;
+                background: $jumpWindow_Table_BG;
+                border: solid 1px $jumpWindow_Table_Border;
+                display: flex;
+                margin: 20px auto 0;
+
+                .left {
+                    width: auto;
+                    height: auto;
+                    flex-shrink: 0;
+
+                    table {
+                        width: auto;
+                        height: auto;
+
+                        tr {
+
+                            &:first-child {
+                                
+                                td {
+                                    background: $jumpWindow_Table_TitleBG;
+                                    border: none;
+        
+                                    p {
+                                        color: $jumpWindow_Table_TitleColor;
+                                        font-size: 18px;
+
+                                        &::before {
+                                            background: $jumpWindow_Border;
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                
+                                td {
+                                    height: 60px;
+                                    background: $jumpWindow_Table_totalBG;
+                                    border: none;
+        
+                                    p {
+                                        color: $jumpWindow_Table_totalColor;
+                                        font-size: 18px;
+
+                                        &::before {
+                                            background: $jumpWindow_Table_totalBorder;
+                                        }
+                                    }
+                                }
+                            }
+
+                            td {
+                                width: auto;
+                                min-width: 120px;
+                                height: 45px;
+                                border-bottom: solid 1px $jumpWindow_Table_innerBorder;
+                                vertical-align: middle;
+        
+                                p {
+                                    width: 100%;
+                                    color: $jumpWindow_Table_Color;
+                                    font-size: 14px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    line-height: 18px;
+                                    position: relative;
+                                    padding: 0 20px;
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        right: 0;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        width: 1px;
+                                        height: 18px;
+                                        background: $jumpWindow_Table_innerBorder;
+                                    }
+
+                                    .code {
+                                        color: $jumpWindow_actingDetail_codeColor;
+                                    }
+                                    .bet {
+                                        color: $jumpWindow_actingDetail_betColor;
+                                    }
+                                    .vs {
+                                        color: $jumpWindow_actingDetail_vsColor;
+                                    }
+                                    .mainTeam {
+                                        color: $jumpWindow_actingDetail_mainTeamColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    width: 100%;
+                    height: auto;
+                    overflow-x: overlay;
+                    @include scrollBar_3;
+
+                    table {
+                        width: auto;
+                        height: auto;
+
+                        tr {
+
+                            &:last-child {
+
+                                td {
+                                    height: 60px;
+                                    background: $jumpWindow_Table_totalBG;
+                                    border: none;
+
+                                    p {
+                                        border-color: $jumpWindow_Table_totalBorder;
+                                        color: $jumpWindow_Table_totalColor;
+
+                                        &.allWin {
+                                            color: $jumpWindow_acting_allWinColor;
+                                        }
+                                        &.allLose {
+                                            color: $jumpWindow_acting_allLoseColor;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            th {
+                                height: 45px;
+                                background: $jumpWindow_Table_TitleBG;
+                                vertical-align: middle;
+
+                                &:last-child {
+                                    
+                                    p {
+                                        font-size: 14px;
+                                        border: none;
+                                    }
+                                }
+    
+                                p {
+                                    width: 100%;
+                                    border-right: solid 1px $jumpWindow_Table_Border;
+                                    color: $jumpWindow_Table_TitleColor;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    white-space: nowrap;
+                                }
+                            }
+
+                            td {
+                                width: auto;
+                                min-width: 120px;
+                                height: 45px;
+                                border-bottom: solid 1px $jumpWindow_Table_innerBorder;
+                                vertical-align: middle;
+
+                                &:last-child {
+                                    
+                                    p {
+                                        border: none;
+                                    }
+                                }
+
+                                p {
+                                    width: 100%;
+                                    border-right: solid 1px $jumpWindow_Table_innerBorder;
+                                    color: $jumpWindow_Table_Color;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    white-space: nowrap;
+                                    padding: 0 20px;
 
                                     &.win {
                                         color: $jumpWindow_acting_winColor;
