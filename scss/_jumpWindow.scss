@@ -363,7 +363,7 @@
 
         &.betting {
             width: 412px;
-            height: 504px;
+            height: 440px;
 
             .content {
                 width: 100%;
@@ -387,7 +387,7 @@
                             display: flex;
 
                             li {
-                                width: 50%;
+                                width: 100%;
                                 height: 100%;
                                 color: $jumpWindow_Table_TitleColor;
                                 font-size: 18px;
@@ -395,45 +395,28 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-
-                                &.single {
-                                    width: 100%;
-                                }
                             }
                         }
                     }
 
-                    .pointBox {
+                    .teamBox {
                         width: 100%;
                         height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
-                        ul {
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
+                        i {
+                            width: 41px;
+                            height: 26px;
+                            filter: drop-shadow(0 2px 1px #00000080);
+                            margin-right: 10px;
+                        }
 
-                            li {
-                                width: 50%;
-                                height: 100%;
-                                display: flex;
-                                align-items: center;
-
-                                &:last-child {
-
-                                    p {
-                                        border: none;
-                                    }
-                                }
-
-                                p {
-                                    width: 100%;
-                                    border-right: solid 1px $jumpWindow_Table_Border_2;
-                                    color: $jumpWindow_Table_Color;
-                                    font-size: 22px;
-                                    font-weight: bold;
-                                    text-align: center;
-                                }
-                            }
+                        p {
+                            color: $jumpWindow_Table_Color;
+                            font-size: 18px;
+                            font-weight: bold;
                         }
                     }
 
@@ -485,16 +468,9 @@
                     button {
                         width: 242px;
                         height: 47px;
+                        @include checkBtn;
                         display: block;
                         margin: 0 auto;
-
-                        &:first-child {
-                            @include checkBtn;
-                            margin-bottom: 15px;
-                        }
-                        &:last-child {
-                            @include reBtn;
-                        }
                     }
                 }
             }

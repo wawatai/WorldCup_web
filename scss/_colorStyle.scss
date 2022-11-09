@@ -156,19 +156,6 @@ $jumpWindow_Table_firstColor: #c68b18;
         background: linear-gradient(to top,#1251df 0%,#0826a8 75%);
     }
 }
-@mixin reBtn {
-    background: linear-gradient(to top,#07a107 3%,#0a5f08 49%,#07a107 90%);
-    border-radius: 5px;
-    border: solid 1px #f4e1a3;
-    box-shadow: 0 5px 8px 0 #00000049;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-
-    &:hover,&:active,&.active {
-        background: linear-gradient(to top,#07a107 3%,#0a5f08 69%);
-    }
-}
 @mixin betBtn {
     background: linear-gradient(to top,#dec8a6 0%,#fffcf8 68%);
     border-radius: 5px;

@@ -195,162 +195,162 @@ footer li i {
   background-size: contain;
 }
 
-.mainArea .bettingBox .America {
+.America {
   background: url("../images/flag/America.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Arabia {
+.Arabia {
   background: url("../images/flag/Arabia.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Argentina {
+.Argentina {
   background: url("../images/flag/Argentina.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Australia {
+.Australia {
   background: url("../images/flag/Ar.Australia.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Belgium {
+.Belgium {
   background: url("../images/flag/Ar.Belgium.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Brazil {
+.Brazil {
   background: url("../images/flag/Brazil.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Cameroon {
+.Cameroon {
   background: url("../images/flag/Cameroon.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Canada {
+.Canada {
   background: url("../images/flag/Canada.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .CostaRica {
+.CostaRica {
   background: url("../images/flag/CostaRica.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Croatia {
+.Croatia {
   background: url("../images/flag/Croatia.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Denmark {
+.Denmark {
   background: url("../images/flag/Denmark.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Ecuador {
+.Ecuador {
   background: url("../images/flag/Ecuador.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .England {
+.England {
   background: url("../images/flag/England.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Franch {
+.Franch {
   background: url("../images/flag/Franch.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Germany {
+.Germany {
   background: url("../images/flag/Germany.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Ghana {
+.Ghana {
   background: url("../images/flag/Ghana.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Iran {
+.Iran {
   background: url("../images/flag/Iran.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Japan {
+.Japan {
   background: url("../images/flag/Japan.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Korea {
+.Korea {
   background: url("../images/flag/Korea.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Mexico {
+.Mexico {
   background: url("../images/flag/Mexico.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Morocco {
+.Morocco {
   background: url("../images/flag/Morocco.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Netherlands {
+.Netherlands {
   background: url("../images/flag/Netherlands.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Poland {
+.Poland {
   background: url("../images/flag/Poland.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Portugal {
+.Portugal {
   background: url("../images/flag/Portugal.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Qatar {
+.Qatar {
   background: url("../images/flag/Qatar.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Senegal {
+.Senegal {
   background: url("../images/flag/Senegal.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Serbian {
+.Serbian {
   background: url("../images/flag/Serbian.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Spain {
+.Spain {
   background: url("../images/flag/Spain.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Switzerland {
+.Switzerland {
   background: url("../images/flag/Switzerland.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Tunisia {
+.Tunisia {
   background: url("../images/flag/Tunisia.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Uruguay {
+.Uruguay {
   background: url("../images/flag/Uruguay.png") no-repeat center;
   background-size: 100%;
 }
 
-.mainArea .bettingBox .Wales {
+.Wales {
   background: url("../images/flag/Wales.png") no-repeat center;
   background-size: 100%;
 }
@@ -1300,7 +1300,7 @@ html body .filter .jumpWindow.rule .content .check:hover, html body .filter .jum
 }
 html body .filter .jumpWindow.betting {
   width: 412px;
-  height: 504px;
+  height: 440px;
 }
 html body .filter .jumpWindow.betting .content {
   width: 100%;
@@ -1327,7 +1327,7 @@ html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul {
   display: flex;
 }
 html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul li {
-  width: 50%;
+  width: 100%;
   height: 100%;
   color: #ffffff;
   font-size: 18px;
@@ -1342,40 +1342,30 @@ html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul li {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body .filter .jumpWindow.betting .content .bettingBox .smallTitle ul li.single {
-  width: 100%;
-}
-html body .filter .jumpWindow.betting .content .bettingBox .pointBox {
+html body .filter .jumpWindow.betting .content .bettingBox .teamBox {
   width: 100%;
   height: 40px;
-}
-html body .filter .jumpWindow.betting .content .bettingBox .pointBox ul {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-html body .filter .jumpWindow.betting .content .bettingBox .pointBox ul li {
-  width: 50%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-html body .filter .jumpWindow.betting .content .bettingBox .pointBox ul li:last-child p {
-  border: none;
+html body .filter .jumpWindow.betting .content .bettingBox .teamBox i {
+  width: 41px;
+  height: 26px;
+  -webkit-filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.5019607843));
+          filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.5019607843));
+  margin-right: 10px;
 }
-html body .filter .jumpWindow.betting .content .bettingBox .pointBox ul li p {
-  width: 100%;
-  border-right: solid 1px #917548;
+html body .filter .jumpWindow.betting .content .bettingBox .teamBox p {
   color: #252525;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
-  text-align: center;
 }
 html body .filter .jumpWindow.betting .content .bettingBox .bettingCnt {
   width: 100%;
@@ -1438,10 +1428,6 @@ html body .filter .jumpWindow.betting .content .lastBox {
 html body .filter .jumpWindow.betting .content .lastBox button {
   width: 242px;
   height: 47px;
-  display: block;
-  margin: 0 auto;
-}
-html body .filter .jumpWindow.betting .content .lastBox button:first-child {
   background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(50%, #0826a8), to(#1251df));
   background: linear-gradient(to top, #1251df 0%, #0826a8 50%, #1251df 100%);
   border-radius: 5px;
@@ -1451,26 +1437,12 @@ html body .filter .jumpWindow.betting .content .lastBox button:first-child {
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 15px;
+  display: block;
+  margin: 0 auto;
 }
-html body .filter .jumpWindow.betting .content .lastBox button:first-child:hover, html body .filter .jumpWindow.betting .content .lastBox button:first-child:active, html body .filter .jumpWindow.betting .content .lastBox button:first-child.active {
+html body .filter .jumpWindow.betting .content .lastBox button:hover, html body .filter .jumpWindow.betting .content .lastBox button:active, html body .filter .jumpWindow.betting .content .lastBox button.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#1251df), color-stop(75%, #0826a8));
   background: linear-gradient(to top, #1251df 0%, #0826a8 75%);
-}
-html body .filter .jumpWindow.betting .content .lastBox button:last-child {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #07a107), color-stop(49%, #0a5f08), color-stop(90%, #07a107));
-  background: linear-gradient(to top, #07a107 3%, #0a5f08 49%, #07a107 90%);
-  border-radius: 5px;
-  border: solid 1px #f4e1a3;
-  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
-          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2862745098);
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-}
-html body .filter .jumpWindow.betting .content .lastBox button:last-child:hover, html body .filter .jumpWindow.betting .content .lastBox button:last-child:active, html body .filter .jumpWindow.betting .content .lastBox button:last-child.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(3%, #07a107), color-stop(69%, #0a5f08));
-  background: linear-gradient(to top, #07a107 3%, #0a5f08 69%);
 }
 html body .filter .jumpWindow.acting {
   width: 1000px;
